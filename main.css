@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+    --font-ubuntu: "Ubuntu", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+
+    --color-accent: #091121;
+    --color-defalut: #f3f6f4;
+    --color-heading: #e1eff9;
+    --color-background: #091121;
+    --color-surface: #151d2d;
+    --color-aqua-700: #279ae4;
+    --color-aqua-800: #1c6b9f;
+
+    --shadow-md: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --shadow-lg: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --shadow-box: 0 8px 32px rgba(0, 0, 0, 0.1);
+
+    --animate-updown: wiggle 3s ease-in-out infinite;
+
+    @keyframes wiggle {
+
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-8px);
+        }
+    }
+    
+}

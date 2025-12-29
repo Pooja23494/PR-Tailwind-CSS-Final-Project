@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+    <style>
+        .scrolled {
+            background-color: rgba(13, 22, 39, 0.9); 
+            box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="text-defalut font-roboto">
+
+    <!-- Header Section Start -->
+    <header id="site-header" class="py-4 fixed top-0 left-0 right-0 z-997 bg-transparent transition-all duration-300 ease-in">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div class="flex justify-between items-center h-16">
+                <a href="javascript:void(0)">
+                    <h1 class="text-3xl font-bold text-white font-ubuntu">Aventro</h1>
+                </a>
+                <ul class="hidden lg:flex justify-between items-center font-inter text-white/60 space-x-8">
+                    <li class="relative py-3.5">
+                        <a href="javascript:void(0)" class="relative text-md text-white">
+                            Home
+                        </a>
+                        <span class="absolute top-full start-0 h-0.5 w-full bg-aqua-700"></span>
+                    </li>
+                    <li class="relative group py-3.5">
+                        <a href="javascript:void(0)"
+                            class="relative text-md group-hover:text-white transition-all duration-300 ease-in-out">
+                            About
+                        </a>
+                        <span
+                            class="absolute top-full start-0 h-0.5 w-0 group-hover:w-full bg-aqua-700 transition-all duration-300 ease-in-out"></span>
+                    </li>
+                    <li class="relative group py-3.5">
+                        <a href="javascript:void(0)"
+                            class="relative text-md group-hover:text-white transition-all duration-300 ease-in-out">
+                            Services
+                        </a>
+                        <span
+                            class="absolute top-full start-0 h-0.5 w-0 group-hover:w-full bg-aqua-700 transition-all duration-300 ease-in-out"></span>
+                    </li>
+                    <li class="relative group py-3.5">
+                        <a href="javascript:void(0)"
+                            class="relative text-md group-hover:text-white transition-all duration-300 ease-in-out">
+                            Pricing
+                        </a>
+                        <span
+                            class="absolute top-full start-0 h-0.5 w-0 group-hover:w-full bg-aqua-700 transition-all duration-300 ease-in-out"></span>
+                    </li>
+                    <li class="relative group py-3.5">
+                        <a href="javascript:void(0)"
+                            class="relative text-md group-hover:text-white transition-all duration-300 ease-in-out">
+                            Team
+                        </a>
+                        <span
+                            class="absolute top-full start-0 h-0.5 w-0 group-hover:w-full bg-aqua-700 transition-all duration-300 ease-in-out"></span>
+                    </li>
+                    <li class="relative group/dropdown py-3.5">
+                        <a href="javascript:void(0)"
+                            class="flex items-center gap-1 text-md transition-all duration-300 group-hover/dropdown:text-white">
+                            Dropdown
+                            <i class="fa-solid fa-chevron-down text-[12px]"></i>
+                        </a>
+                        <span
+                            class="absolute top-full left-0 h-0.5 w-0 bg-aqua-700 transition-all duration-300 group-hover/dropdown:w-full"></span>
+                        <ul class="text-defalut absolute left-0 top-full mt-2 min-w-55 bg-[#10192b] border border-aqua-700 rounded-md opacity-0 invisible translate-y-2 
+                            group-hover/dropdown:opacity-100 group-hover/dropdown:visible group-hover/dropdown:translate-y-0
+                            transition-all duration-300 z-50">
+                            <li>
+                                <a class="block px-4 py-2 hover:text-aqua-700" href="#">Dropdown 1</a>
+                            </li>
+                            <li class="relative group/deep">
+                                <a class="flex items-center justify-between px-4 py-2 hover:text-aqua-700" href="#">
+                                    Deep Dropdown
+                                    <i class="fa-solid fa-chevron-down text-[12px]"></i>
+                                </a>
+                                <ul class="absolute top-0 -left-full ml-2 min-w-50 bg-[#10192b] border border-aqua-700 rounded-md opacity-0 invisible translate-x-2
+                                    group-hover/deep:opacity-100 group-hover/deep:visible group-hover/deep:translate-x-0
+                                    transition-all duration-300 z-50">
+                                    <li><a class="block px-4 py-2 hover:text-aqua-700" href="#">Deep Dropdown 1</a>
+                                    </li>
+                                    <li><a class="block px-4 py-2 hover:text-aqua-700" href="#">Deep Dropdown 2</a>
+                                    </li>
+                                    <li><a class="block px-4 py-2 hover:text-aqua-700" href="#">Deep Dropdown 3</a>
+                                    </li>
+                                    <li><a class="block px-4 py-2 hover:text-aqua-700" href="#">Deep Dropdown 4</a>
+                                    </li>
+                                    <li><a class="block px-4 py-2 hover:text-aqua-700" href="#">Deep Dropdown 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="block px-4 py-2 hover:text-aqua-700" href="#">Dropdown 2</a></li>
+                            <li><a class="block px-4 py-2 hover:text-aqua-700" href="#">Dropdown 3</a></li>
+                            <li><a class="block px-4 py-2 hover:text-aqua-700" href="#">Dropdown 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="relative group py-3.5">
+                        <a href="javascript:void(0)"
+                            class="relative text-md group-hover:text-white transition-all duration-300 ease-in-out">
+                            Contact
+                        </a>
+                        <span
+                            class="absolute top-full start-0 h-0.5 w-0 group-hover:w-full bg-aqua-700 transition-all duration-300 ease-in-out"></span>
+                    </li>
+                </ul>
+
+                <ul class="flex justify-between items-center text-white/60 space-x-1.5 text-md">
+                    <li><a href="javascript:void(0)"
+                            class="inline-block hover:text-aqua-700 transition-all duration-300 ease-in-out"><i
+                                class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="javascript:void(0)"
+                            class="inline-block hover:text-aqua-700 transition-all duration-300 ease-in-out"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="javascript:void(0)"
+                            class="inline-block hover:text-aqua-700 transition-all duration-300 ease-in-out"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="javascript:void(0)"
+                            class="inline-block hover:text-aqua-700 transition-all duration-300 ease-in-out"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                    <button id="menu-btn" class="lg:hidden text-white text-2xl">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <!-- Mobile Menu -->
+                    <div id="mobile-menu"
+                        class="fixed inset-0 bg-background z-40 translate-x-full transition-transform duration-300 lg:hidden">
+
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 class="text-2xl font-bold text-white font-ubuntu">Aventro</h2>
+                                <button id="close-menu" class="text-white text-2xl">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <ul class="space-y-4 text-white/80 text-lg">
+                                <li><a href="#" class="block hover:text-aqua-700">Home</a></li>
+                                <li><a href="#" class="block hover:text-aqua-700">About</a></li>
+                                <li><a href="#" class="block hover:text-aqua-700">Services</a></li>
+                                <li><a href="#" class="block hover:text-aqua-700">Pricing</a></li>
+                                <li><a href="#" class="block hover:text-aqua-700">Team</a></li>
+                                <li>
+                                    <button class="w-full flex justify-between items-center dropdown-toggle">
+                                        Dropdown
+                                        <i class="fa-solid fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <ul class="hidden mt-3 ml-4 space-y-3">
+                                        <li><a href="#" class="block hover:text-aqua-700">Dropdown 1</a></li>
+                                        <li>
+                                            <button class="w-full flex justify-between items-center deep-toggle">
+                                                Deep Dropdown
+                                                <i class="fa-solid fa-chevron-down text-sm"></i>
+                                            </button>
+                                            <ul class="hidden mt-3 ml-4 space-y-3">
+                                                <li><a href="#">Deep Dropdown 1</a></li>
+                                                <li><a href="#">Deep Dropdown 2</a></li>
+                                                <li><a href="#">Deep Dropdown 3</a></li>
+                                                <li><a href="#">Deep Dropdown 4</a></li>
+                                                <li><a href="#">Deep Dropdown 5</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#" class="block hover:text-aqua-700">Dropdown 2</a></li>
+                                        <li><a href="#" class="block hover:text-aqua-700">Dropdown 3</a></li>
+                                        <li><a href="#" class="block hover:text-aqua-700">Dropdown 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="block hover:text-aqua-700">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <main>
+
+        <!-- Hero Section Start -->
+        <section id="home">
+            <div class="relative min-h-screen pt-100 py-220 md:py-120 lg:py-100">
+                <img src="./images/bg.webp" class="absolute inset-0 w-full h-full bg-cover object-cover" alt="bg">
+                <div class="absolute inset-0 bg-background/80">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-start lg:items-center">
+                        <div class="flex flex-col lg:flex-row items-center gap-12 w-full">
+                            <div class="w-full lg:w-1/2 text-center lg:text-left mt-25">
+                                <span
+                                    class="inline-block py-2 px-5 bg-aqua-800 rounded-full uppercase text-sm font-semibold tracking-wide border border-aqua-800 mb-7">
+                                    Innovative Solutions
+                                </span>
+                                <h1
+                                    class="text-4xl md:text-5xl lg:text-6xl/16 font-extrabold font-ubuntu mb-7 text-heading">
+                                    Transform Your <br class="hidden md:block"> Business with Modern Technology</h1>
+                                <p class="text-lg sm:text-xl text-defalut/70 max-w-xl mx-auto lg:mx-0 mb-8">Lorem ipsum
+                                    dolor sit amet,
+                                    consectetur
+                                    adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut
+                                    enim
+                                    ad minim veniam quis nostrud.</p>
+                                <div class="flex flex-col md:flex-row space-x-5 md:items-center items-start mb-14">
+                                    <a href="javascript:void(0)"
+                                        class="text-white mb-6 md:mb-0 font-semibold py-4 px-8 bg-aqua-700 rounded-lg shadow-md shadow-aqua-700 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">Explore
+                                        Services</a>
+                                    <a href="javascript:void(0)"
+                                        class="flex items-center text-aqua-700 font-semibold hover:translate-x-2 transition-all duration-300"><i
+                                            class="bi bi-play-circle me-2.5 text-2xl"></i>Watch Demo</a>
+                                </div>
+                                <div
+                                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left md:text-center lg:text-left">
+                                    <div class="flex flex-col mb-4 md:mb-0">
+                                        <span class="text-3xl font-extrabold text-aqua-700 mb-1">500+</span>
+                                        <span class="text-sm uppercase tracking-wider text-defalut/70">Projects
+                                            Completed</span>
+                                    </div>
+                                    <div class="flex flex-col mb-4 md:mb-0">
+                                        <span class="text-3xl font-extrabold text-aqua-700 mb-1">98+</span>
+                                        <span class="text-sm uppercase tracking-wider text-defalut/70">Client
+                                            Satisfaction</span>
+                                    </div>
+                                    <div class="flex flex-col mb-4 md:mb-0">
+                                        <span class="text-3xl font-extrabold text-aqua-700 mb-1">24/7</span>
+                                        <span class="text-sm uppercase tracking-wider text-defalut/70">Support
+                                            Available</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2">
+                                <div class="flex flex-wrap space-y-4">
+                                    <div class="w-1/2 px-2">
+                                        <div
+                                            class="backdrop-blur-xs bg-[#ffffff1a] border border-white/20 rounded-lg p-8 text-center shadow-box">
+                                            <i class="block bi bi-shield-check text-3xl text-aqua-700 mb-3"></i>
+                                            <span class="text-defalut/70 font-semibold">Secure & Reliable</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2 px-2">
+                                        <div
+                                            class="backdrop-blur-xs bg-[#ffffff1a] border border-white/20 rounded-lg p-8 text-center shadow-box">
+                                            <i class="block bi bi-speedometer2 text-3xl text-aqua-700 mb-3"></i>
+                                            <span class="text-defalut/70 font-semibold">High Performance</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2 px-2">
+                                        <div
+                                            class="backdrop-blur-xs bg-[#ffffff1a] border border-white/20 rounded-lg p-8 text-center shadow-box">
+                                            <i class="block bi bi-people text-3xl text-aqua-700 mb-3"></i>
+                                            <span class="text-defalut/70 font-semibold">Expert Team</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2 px-2">
+                                        <div
+                                            class="backdrop-blur-xs bg-[#ffffff1a] border border-white/20 rounded-lg p-8 text-center shadow-box">
+                                            <i class="block bi bi-award text-3xl text-aqua-700 mb-3"></i>
+                                            <span class="text-defalut/70 font-semibold">Award Winning</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- About Section Start -->
+        <section id="about" class="bg-background py-16 sm:py-20">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">About</h2>
+                    <span class="absolute left-1/2 transform -translate-x-1/2 w-40 bg-defalut/40 h-px"></span>
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-px w-15 bg-aqua-700 h-0.5"></span>
+                    <p class="mt-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+                <div class="flex flex-wrap items-center mt-15">
+                    <div class="w-full lg:w-1/2 px-4">
+                        <img src="./images/about-21.webp" class="w-full block rounded-2xl" alt="about-21">
+                    </div>
+                    <div class="w-full lg:w-1/2 px-4">
+                        <h2 class="text-4xl font-ubuntu text-heading font-bold mb-4">Our Visionary Endeavors</h2>
+                        <p class="text-xl/7 font-light text-defalut/80 mb-4">Discover how our diverse range of services
+                            can empower your business to achieve greater efficiency and growth in a competitive
+                            landscape.</p>
+                        <p class="text-md/7 mb-4">We provide expert consultancy and practical tools designed to
+                            streamline
+                            your operations,
+                            enhance productivity, and maximize your return on investment. Our committed team of
+                            professionals is dedicated to helping you navigate challenges and seize opportunities.</p>
+                        <a href="javascript:void(0)"
+                            class="inline-block text-white font-semibold py-3 px-8.5 mt-4 bg-aqua-700 rounded-full shadow-[0_2px_12px] shadow-aqua-700/15 hover:shadow-[0_4px_18px] hover:shadow-aqua-700 transition-all duration-300">Discover
+                            Our Story</a>
+                    </div>
+                </div>
+                <div class="flex flex-wrap mt-15">
+                    <div class="md:w-1/3 px-2 group mb-3 md:mb-0">
+                        <div
+                            class="h-full bg-surface p-5 lg:p-10 rounded-2xl shadow-[0_2px_20px_0] shadow-aqua-700/5 flex flex-col items-start transition-all duration-300 group-hover:shadow-[0_8px_28px_0] group-hover:shadow-aqua-700/20 group-hover:-translate-0.5 gropu-hover:scale-[1.03]">
+                            <div
+                                class="flex items-center justify-center w-14 h-14 rounded-full bg-aqua-700/10 text-aqua-700 text-3xl shadow-[0_3px_10px_0] 
+                                shadow-aqua-700/10 transition-all duration-300 mb-4 group-hover:bg-aqua-700 group-hover:text-white">
+                                <i class="bi bi-stars"></i>
+                            </div>
+                            <h5 class="text-xl font-bold lg:text-3xl font-ubuntu text-heading mb-2">Our Core Principles
+                            </h5>
+                            <p class="text-defalut/70">We adhere to a strict set of values focused on integrity,
+                                innovation, and client satisfaction in every aspect.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3 px-2 group mb-3 md:mb-0">
+                        <div
+                            class="h-full bg-surface p-5 lg:p-10 rounded-2xl shadow-[0_2px_20px_0] shadow-aqua-700/5 flex flex-col items-start transition-all duration-300 group-hover:shadow-[0_8px_28px_0] group-hover:shadow-aqua-700/20 group-hover:-translate-0.5 gropu-hover:scale-[1.03]">
+                            <div
+                                class="flex items-center justify-center w-14 h-14 rounded-full bg-aqua-700/10 text-aqua-700 text-3xl shadow-[0_3px_10px_0] 
+                                shadow-aqua-700/10 transition-all duration-300 mb-4 group-hover:bg-aqua-700 group-hover:text-white">
+                                <i class="bi bi-clock-history"></i>
+                            </div>
+                            <h5 class="text-xl font-bold lg:text-3xl font-ubuntu text-heading mb-2">Our Journey So Far
+                            </h5>
+                            <p class="text-defalut/70">Since our inception, we have continuously evolved to meet the
+                                dynamic needs of the global market effectively.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3 px-2 group mb-3 md:mb-0">
+                        <div
+                            class="h-full bg-surface p-5 lg:p-10 rounded-2xl shadow-[0_2px_20px_0] shadow-aqua-700/5 flex flex-col items-start transition-all duration-300 group-hover:shadow-[0_8px_28px_0] group-hover:shadow-aqua-700/20 group-hover:-translate-0.5 gropu-hover:scale-[1.03]">
+                            <div
+                                class="flex items-center justify-center w-14 h-14 rounded-full bg-aqua-700/10 text-aqua-700 text-3xl shadow-[0_3px_10px_0] 
+                                shadow-aqua-700/10 transition-all duration-300 mb-4 group-hover:bg-aqua-700 group-hover:text-white">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h5 class="text-xl font-bold lg:text-3xl font-ubuntu text-heading mb-2">Meet Our Team</h5>
+                            <p class="text-defalut/70">Our dedicated personnel are the backbone of our success, bringing
+                                diverse expertise and a shared commitment to excellence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Services Section Start -->
+        <section id="services" class="bg-background py-16 sm:py-10">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Services</h2>
+                    <span class="absolute left-1/2 transform -translate-x-1/2 w-40 bg-defalut/40 h-px"></span>
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-px w-15 bg-aqua-700 h-0.5"></span>
+                    <p class="mt-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+                <div class="flex flex-wrap items-center mt-15">
+                    <div class="md:w-1/2 lg:w-1/3 px-2 mb-5 group">
+                        <div
+                            class="h-full p-5 bg-surface rounded-xl shadow-[0_5px _25px_-5px] shadow-[#0000000d] overflow-hidden group-hover:-translate-y-2 
+                            group-hover:shadow-[0_8px_30px_-5px] group-hover:shadow-[#00000014] transition-all duration-300 ease-in-out relative">
+                            <span
+                                class="absolute top-0 left-0 w-0.75 bg-aqua-700 group-hover:h-full transition-all duration-300 ease-in-out"></span>
+                            <div class="mb-6">
+                                <i
+                                    class="bi bi-stack text-4xl text-aqua-700/85 group-hover:text-aqua-700 group-hover:scale-[1.1] group-hover:rotate-[5deg] transition-all duration-300 ease-in-out"></i>
+                            </div>
+                            <h3 class="text-xl lg:text-2xl font-semibold text-heading font-ubuntu mb-4">Digital
+                                Solutions</h3>
+                            <p class="text-defalut/75 mb-6 text-md/6">Sed ut perspiciatis unde omnis iste natus error
+                                sit voluptatem accusantium doloremque
+                                laudantium totam rem aperiam eaque ipsa.</p>
+                            <div class="mt-auto">
+                                <a href="javascript:void(0)"
+                                    class="inline-flex items-center text-aqua-700 font-medium hover:text-aqua-700/75 transition-all duration-300 ease-in">
+                                    Learn More
+                                    <i
+                                        class="bi bi-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 lg:w-1/3 px-2 mb-5 group">
+                        <div
+                            class="h-full p-5 bg-surface rounded-xl shadow-[0_5px _25px_-5px] shadow-[#0000000d] overflow-hidden group-hover:-translate-y-2 
+                            group-hover:shadow-[0_8px_30px_-5px] group-hover:shadow-[#00000014] transition-all duration-300 ease-in-out relative">
+                            <span
+                                class="absolute top-0 left-0 w-0.75 bg-aqua-700 group-hover:h-full transition-all duration-300 ease-in-out"></span>
+                            <div class="mb-6">
+                                <i
+                                    class="bi bi-shield-check text-4xl text-aqua-700/85 group-hover:text-aqua-700 group-hover:scale-[1.1] group-hover:rotate-[5deg] transition-all duration-300 ease-in-out"></i>
+                            </div>
+                            <h3 class="text-xl lg:text-2xl font-semibold text-heading font-ubuntu mb-4">Secure Systems
+                            </h3>
+                            <p class="text-defalut/75 mb-6 text-md/6">Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
+                                cupidatat.</p>
+                            <div class="mt-auto">
+                                <a href="javascript:void(0)"
+                                    class="inline-flex items-center text-aqua-700 font-medium hover:text-aqua-700/75 transition-all duration-300 ease-in">
+                                    Learn More
+                                    <i
+                                        class="bi bi-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 lg:w-1/3 px-2 mb-5 group">
+                        <div
+                            class="h-full p-5 bg-surface rounded-xl shadow-[0_5px _25px_-5px] shadow-[#0000000d] overflow-hidden group-hover:-translate-y-2 
+                            group-hover:shadow-[0_8px_30px_-5px] group-hover:shadow-[#00000014] transition-all duration-300 ease-in-out relative">
+                            <span
+                                class="absolute top-0 left-0 w-0.75 bg-aqua-700 group-hover:h-full transition-all duration-300 ease-in-out"></span>
+                            <div class="mb-6">
+                                <i
+                                    class="bi bi-graph-up text-4xl text-aqua-700/85 group-hover:text-aqua-700 group-hover:scale-[1.1] group-hover:rotate-[5deg] transition-all duration-300 ease-in-out"></i>
+                            </div>
+                            <h3 class="text-xl lg:text-2xl font-semibold text-heading font-ubuntu mb-4">Growth Strategy
+                            </h3>
+                            <p class="text-defalut/75 mb-6 text-md/6">Quis autem vel eum iure reprehenderit qui in ea
+                                voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem.</p>
+                            <div class="mt-auto">
+                                <a href="javascript:void(0)"
+                                    class="inline-flex items-center text-aqua-700 font-medium hover:text-aqua-700/75 transition-all duration-300 ease-in">
+                                    Learn More
+                                    <i
+                                        class="bi bi-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 lg:w-1/3 px-2 mb-5 group">
+                        <div
+                            class="h-full p-5 bg-surface rounded-xl shadow-[0_5px _25px_-5px] shadow-[#0000000d] overflow-hidden group-hover:-translate-y-2 
+                            group-hover:shadow-[0_8px_30px_-5px] group-hover:shadow-[#00000014] transition-all duration-300 ease-in-out relative">
+                            <span
+                                class="absolute top-0 left-0 w-0.75 bg-aqua-700 group-hover:h-full transition-all duration-300 ease-in-out"></span>
+                            <div class="mb-6">
+                                <i
+                                    class="bi bi-cpu text-4xl text-aqua-700/85 group-hover:text-aqua-700 group-hover:scale-[1.1] group-hover:rotate-[5deg] transition-all duration-300 ease-in-out"></i>
+                            </div>
+                            <h3 class="text-xl lg:text-2xl font-semibold text-heading font-ubuntu mb-4">AI Integration
+                            </h3>
+                            <p class="text-defalut/75 mb-6 text-md/6">Nemo enim ipsam voluptatem quia voluptas sit
+                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
+                            <div class="mt-auto">
+                                <a href="javascript:void(0)"
+                                    class="inline-flex items-center text-aqua-700 font-medium hover:text-aqua-700/75 transition-all duration-300 ease-in">
+                                    Learn More
+                                    <i
+                                        class="bi bi-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 lg:w-1/3 px-2 mb-5 group">
+                        <div
+                            class="h-full p-5 bg-surface rounded-xl shadow-[0_5px _25px_-5px] shadow-[#0000000d] overflow-hidden group-hover:-translate-y-2 
+                            group-hover:shadow-[0_8px_30px_-5px] group-hover:shadow-[#00000014] transition-all duration-300 ease-in-out relative">
+                            <span
+                                class="absolute top-0 left-0 w-0.75 bg-aqua-700 group-hover:h-full transition-all duration-300 ease-in-out"></span>
+                            <div class="mb-6">
+                                <i
+                                    class="bi bi-cloud-arrow-up text-4xl text-aqua-700/85 group-hover:text-aqua-700 group-hover:scale-[1.1] group-hover:rotate-[5deg] transition-all duration-300 ease-in-out"></i>
+                            </div>
+                            <h3 class="text-xl lg:text-2xl font-semibold text-heading font-ubuntu mb-4">Cloud Services
+                            </h3>
+                            <p class="text-defalut/75 mb-6 text-md/6">At vero eos et accusamus et iusto odio dignissimos
+                                ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.</p>
+                            <div class="mt-auto">
+                                <a href="javascript:void(0)"
+                                    class="inline-flex items-center text-aqua-700 font-medium hover:text-aqua-700/75 transition-all duration-300 ease-in">
+                                    Learn More
+                                    <i
+                                        class="bi bi-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 lg:w-1/3 px-2 mb-5 group">
+                        <div
+                            class="h-full p-5 bg-surface rounded-xl shadow-[0_5px _25px_-5px] shadow-[#0000000d] overflow-hidden group-hover:-translate-y-2 
+                            group-hover:shadow-[0_8px_30px_-5px] group-hover:shadow-[#00000014] transition-all duration-300 ease-in-out relative">
+                            <span
+                                class="absolute top-0 left-0 w-0.75 bg-aqua-700 group-hover:h-full transition-all duration-300 ease-in-out"></span>
+                            <div class="mb-6">
+                                <i
+                                    class="bi bi-gear text-4xl text-aqua-700/85 group-hover:text-aqua-700 group-hover:scale-[1.1] group-hover:rotate-[5deg] transition-all duration-300 ease-in-out"></i>
+                            </div>
+                            <h3 class="text-xl lg:text-2xl font-semibold text-heading font-ubuntu mb-4">Process
+                                Automation</h3>
+                            <p class="text-defalut/75 mb-6 text-md/6">Nam libero tempore, cum soluta nobis est eligendi
+                                optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                            <div class="mt-auto">
+                                <a href="javascript:void(0)"
+                                    class="inline-flex items-center text-aqua-700 font-medium hover:text-aqua-700/75 transition-all duration-300 ease-in">
+                                    Learn More
+                                    <i
+                                        class="bi bi-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section End -->
+
+        <!-- Features Section Start -->
+        <section id="features" class="bg-background py-16 sm:py-10">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap items-center">
+                    <div class="lg:w-5/12 px-2">
+                        <div class="pr-10 mb-14 lg:mb-0">
+                            <div
+                                class="inline-flex items-center gap-2 py-2 px-4 bg-aqua-700/8 rounded-4xl text-sm text-aqua-700 mb-6 tracking-tight">
+                                <i class="bi bi-stars text-md"></i>
+                                <span class="text-sm">Premium Features</span>
+                            </div>
+                            <h2 class="text-5xl/15 mb-6 font-light text-heading font-ubuntu">Elevating Your Digital
+                                Experience</h2>
+                            <p class="text-lg/7 text-defalut/70 mb-10">Curabitur ullamcorper ultricies nisi. Nam eget
+                                dui etiam rhoncus maecenas tempus tellus
+                                eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.
+                            </p>
+                            <div
+                                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left md:text-center lg:text-left mb-10">
+                                <div class="flex flex-col mb-4 md:mb-0">
+                                    <span class="text-3xl font-light text-heading tracking-tighter mb-1">2.5K+</span>
+                                    <span class="text-xs text-defalut/60">Active Users</span>
+                                </div>
+                                <div class="flex flex-col mb-4 md:mb-0">
+                                    <span class="text-3xl font-light text-heading tracking-tighter mb-1">99.9%</span>
+                                    <span class="text-xs text-defalut/60">Uptime Rate</span>
+                                </div>
+                                <div class="flex flex-col mb-4 md:mb-0">
+                                    <span class="text-3xl font-light text-heading tracking-tighter mb-1">150+</span>
+                                    <span class="text-xs text-defalut/60">Integrations</span>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <a href="javascript:void(0)"
+                                    class="inline-flex items-center gap-2 text-aqua-700 group-hover:text-aqua-700/80 group-hover:border-aqua-700 transition-all duration-300 ease-in py-1 border-b border-aqua-700/30">
+                                    Explore all features
+                                    <i
+                                        class="bi bi-arrow-right text-lg group-hover:translate-x-1.5 transition-all duration-300 ease-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-7/12 px-2">
+                        <div class="flex flex-wrap gap-6 group">
+                            <div
+                                class="bg-surface p-8 rounded-lg border border-transparent hover:border-aqua-700/20 transition-all duration-300 ease-in">
+                                <div class="flex items-start gap-5 mb-4">
+                                    <div
+                                        class="w-12 h-12 shrink-0 flex items-center justify-center rounded-md bg-aqua-700/6">
+                                        <i class="bi bi-lock-fill text-2xl text-aqua-700"></i>
+                                    </div>
+                                    <div
+                                        class="flex flex-col sm:flex-row gap-2 flex-1 sm:justify-between items-start sm:gap-3">
+                                        <h3 class="text-xl tracking-tight text-heading font-ubuntu">Advanced Security
+                                            Protocol</h3>
+                                        <span
+                                            class="bg-[#198754]/12 text-[#198754] py-1 px-3 rounded-sm text-xs whitespace-nowrap tracking-wide">Active</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm/6 text-defalut/65 m-0 pl-16.75">Pellentesque habitant morbi tristique
+                                    senectus et netus et malesuada fames ac turpis
+                                    egestas vestibulum tortor quam feugiat vitae.</p>
+                            </div>
+                            <div
+                                class="bg-surface p-8 rounded-lg border border-transparent hover:border-aqua-700/20 transition-all duration-300 ease-in">
+                                <div class="flex items-start gap-5 mb-4">
+                                    <div
+                                        class="w-12 h-12 shrink-0 flex items-center justify-center rounded-md bg-aqua-700/6">
+                                        <i class="bi bi-bezier2 text-2xl text-aqua-700"></i>
+                                    </div>
+                                    <div
+                                        class="flex flex-col sm:flex-row gap-2 flex-1 sm:justify-between items-start sm:gap-3">
+                                        <h3 class="text-xl tracking-tight text-heading font-ubuntu">Seamless Workflows
+                                        </h3>
+                                        <span
+                                            class="bg-[#198754]/12 text-[#198754] py-1 px-3 rounded-sm text-xs whitespace-nowrap tracking-wide">Active</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm/6 text-defalut/65 m-0 pl-16.75">Donec sodales sagittis magna sed
+                                    pellentesque urna nunc id cursus metus aliquam eleifend mi in nulla posuere
+                                    sollicitudin.</p>
+                            </div>
+                            <div
+                                class="bg-surface p-8 rounded-lg border border-transparent hover:border-aqua-700/20 transition-all duration-300 ease-in">
+                                <div class="flex items-start gap-5 mb-4">
+                                    <div
+                                        class="w-12 h-12 shrink-0 flex items-center justify-center rounded-md bg-aqua-700/6">
+                                        <i class="bi bi-droplet-half text-2xl text-aqua-700"></i>
+                                    </div>
+                                    <div
+                                        class="flex flex-col sm:flex-row gap-2 flex-1 sm:justify-between items-start sm:gap-3">
+                                        <h3 class="text-xl tracking-tight text-heading font-ubuntu">Real-Time Analytics
+                                        </h3>
+                                        <span
+                                            class="bg-[#0d6efd]/12 text-[#0d6efd] py-1 px-3 rounded-sm text-xs whitespace-nowrap tracking-wide">Beta</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm/6 text-defalut/65 m-0 pl-16.75">Proin libero nunc consequat interdum
+                                    varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan.
+                                </p>
+                            </div>
+                            <div
+                                class="bg-surface p-8 rounded-lg border border-transparent hover:border-aqua-700/20 transition-all duration-300 ease-in">
+                                <div class="flex items-start gap-5 mb-4">
+                                    <div
+                                        class="w-12 h-12 shrink-0 flex items-center justify-center rounded-md bg-aqua-700/6">
+                                        <i class="bi bi-rocket-takeoff text-2xl text-aqua-700"></i>
+                                    </div>
+                                    <div
+                                        class="flex flex-col sm:flex-row gap-2 flex-1 sm:justify-between items-start sm:gap-3">
+                                        <h3 class="text-xl tracking-tight text-heading font-ubuntu">Rapid Deployment
+                                        </h3>
+                                        <span
+                                            class="bg-defalut/12 text-defalut/80 py-1 px-3 rounded-sm text-xs whitespace-nowrap tracking-wide">Coming
+                                            Soon</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm/6 text-defalut/65 m-0 pl-16.75">Vivamus suscipit tortor eget felis
+                                    porttitor volutpat curabitur arcu erat accumsan id imperdiet et porttitor at sem.
+                                </p>
+                            </div>
+                            <div
+                                class="bg-surface p-8 rounded-lg border border-transparent hover:border-aqua-700/20 transition-all duration-300 ease-in">
+                                <div class="flex items-start gap-5 mb-4">
+                                    <div
+                                        class="w-12 h-12 shrink-0 flex items-center justify-center rounded-md bg-aqua-700/6">
+                                        <i class="bi bi-infinity text-2xl text-aqua-700"></i>
+                                    </div>
+                                    <div
+                                        class="flex flex-col sm:flex-row gap-2 flex-1 sm:justify-between items-start sm:gap-3">
+                                        <h3 class="text-xl tracking-tight text-heading font-ubuntu">Infinite Scalability
+                                        </h3>
+                                        <span
+                                            class="bg-[#198754]/12 text-[#198754] py-1 px-3 rounded-sm text-xs whitespace-nowrap tracking-wide">Active</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm/6 text-defalut/65 m-0 pl-16.75">Mauris blandit aliquet elit eget
+                                    tincidunt nibh pulvinar a proin eget tortor risus quisque velit nisi pretium ut
+                                    lacinia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Features Section End -->
+
+        <!-- Tabs Section Start -->
+        <section id="tabs" class="bg-background py-16 sm:py-10 scroll-mt-18 overflow-clip">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <ul
+                    class="w-full border-none flex flex-col md:flex-row gap-4 justify-center md:gap-0 bg-surface rounded-lg p-2 mb-20 shadow-[0_2px_20px] shadow-defalut/6">
+                    <li class="flex flex-none md:flex-1 cursor-pointer">
+                        <a href="javascript:void(0)"
+                            class="w-full block bg-[#0d6efd] border-none p-0 rounded-md relative overflow-hidden transition-all duration-300 ease-in">
+                            <div class="flex items-center gap-4 py-4 px-5 md:py-5 md:px-6">
+                                <span class="text-white bg-white/15 w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 
+                                            transition-all duration-300 ease-in">01</span>
+                                <div class="text-left">
+                                    <h6 class="mb-0.5 text-sm font-medium transition-all duration-300 ease-in">
+                                        Innovation</h6>
+                                    <small class="text-xs block transition-all duration-300 ease-in">Creative
+                                        solutions</small>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flex flex-none md:flex-1 cursor-pointer group">
+                        <a href="javascript:void(0)"
+                            class="w-full block border-none p-0 rounded-md relative overflow-hidden group-hover:bg-aqua-700/5 transition-all duration-300 ease-in">
+                            <div class="flex items-center gap-4 py-4 px-5 md:py-5 md:px-6">
+                                <span class="text-white group-hover:text-aqua-700 bg-white/15 group-hover:bg-aqua-700/15 w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 
+                                            transition-all duration-300 ease-in">02</span>
+                                <div class="text-left">
+                                    <h6 class="mb-0.5 text-sm font-medium transition-all duration-300 ease-in">
+                                        Strategy</h6>
+                                    <small class="text-xs block transition-all duration-300 ease-in">Business
+                                        growth</small>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flex flex-none md:flex-1 cursor-pointer group">
+                        <a href="javascript:void(0)"
+                            class="w-full block border-none p-0 rounded-md relative overflow-hidden group-hover:bg-aqua-700/5 transition-all duration-300 ease-in">
+                            <div class="flex items-center gap-4 py-4 px-5 md:py-5 md:px-6">
+                                <span class="text-white group-hover:text-aqua-700 bg-white/15 group-hover:bg-aqua-700/15 w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 
+                                            transition-all duration-300 ease-in">03</span>
+                                <div class="text-left">
+                                    <h6 class="mb-0.5 text-sm font-medium transition-all duration-300 ease-in">
+                                        Performance</h6>
+                                    <small class="text-xs block transition-all duration-300 ease-in">Optimal
+                                        results</small>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flex flex-none md:flex-1 cursor-pointer group">
+                        <a href="javascript:void(0)"
+                            class="w-full block border-none p-0 rounded-md relative overflow-hidden group-hover:bg-aqua-700/5 transition-all duration-300 ease-in">
+                            <div class="flex items-center gap-4 py-4 px-5 md:py-5 md:px-6">
+                                <span class="text-white group-hover:text-aqua-700 bg-white/15 group-hover:bg-aqua-700/15 w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 
+                                            transition-all duration-300 ease-in">04</span>
+                                <div class="text-left">
+                                    <h6 class="mb-0.5 text-sm font-medium transition-all duration-300 ease-in">
+                                        Integration</h6>
+                                    <small class="text-xs block transition-all duration-300 ease-in">Seamless
+                                        workflow</small>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="flex flex-wrap items-center">
+                    <div class="lg:w-1/2 px-2">
+                        <div class="pr-10 mb-14 lg:mb-0">
+                            <div
+                                class="inline-flex items-center gap-2 py-2 px-4 bg-aqua-700/8 rounded-4xl text-xs font-medium text-aqua-700 mb-6 tracking-tight">
+                                <i class="bi bi-lightbulb text-sm"></i>
+                                <span>Innovation Hub</span>
+                            </div>
+                            <h3 class="text-4xl/11 mb-6 font-light text-heading font-ubuntu">Revolutionary Design
+                                Thinking</h3>
+                            <p class="text-md/10 text-defalut/75 mb-10">Sed ut perspiciatis unde omnis natus error sit
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                            <div class="grid grid-cols-2 gap-10 text-left mb-10">
+                                <div>
+                                    <span class="block text-2xl font-light text-aqua-700 mb-1">145%</span>
+                                    <span class="text-xs text-defalut/60 uppercase tracking-wider">Active Users</span>
+                                </div>
+                                <div>
+                                    <span class="block text-2xl font-light text-aqua-700 mb-1">28K</span>
+                                    <span class="text-xs text-defalut/60 uppercase tracking-wider">Ideas
+                                        Generated</span>
+                                </div>
+                            </div>
+                            <div class="mb-10">
+                                <div class="flex items-start gap-3 mb-4">
+                                    <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                    <span class="text-sm">Nemo enim ipsam voluptatem quia voluptas sit</span>
+                                </div>
+                                <div class="flex items-start gap-3 mb-4">
+                                    <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                    <span class="text-sm">Aspernatur aut odit fugit sed quia consequuntur</span>
+                                </div>
+                                <div class="flex items-start gap-3 mb-4">
+                                    <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                    <span class="text-sm">Magni dolores eos qui ratione voluptatem</span>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <a href="javascript:void(0)" class="inline-flex items-center gap-2 group-hover:gap-3 text-sm font-medium text-aqua-700 group-hover:text-aqua-700/80 
+                                    transition-all duration-300 ease-in">
+                                    Explore Innovation
+                                    <i
+                                        class="bi bi-arrow-up-right group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in">
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 px-2">
+                        <div class="relative pl-0 lg:pl-10">
+                            <img src="./images/features-2.webp" class="w-full block rounded-lg" alt="features-2">
+                            <div class="absolute bottom-5 end-5">
+                                <div class="bg-surface backdrop-blur-md rounded-xl py-4 px-5 flex items-center gap-3 shadow-[0_8px_30px] shadow-defalut/15 
+                                    border border-defalut/10 transition-all ease-in-out animate-updown">
+                                    <i class="bi bi-lightning-charge text-xl text-aqua-700"></i>
+                                    <div>
+                                        <span
+                                            class="block text-[10px] text-defalut/60 uppercase tracking-wider mb-0.5">Speed</span>
+                                        <strong class="block text-[13px] font-semibold text-heading">3x Faster</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tabs Section ENd -->
+
+        <!-- Call to action Section Start -->
+        <section id="call-to-action" class="bg-[#141f33] py-16 sm:py-20 scroll-mt-18 overflow-clip">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap">
+                    <div class="lg:w-5/12 px-2">
+                        <div class="pr-10 mb-14 lg:mb-0">
+                            <div class="inline-block text-aqua-700 text-sm font-semibold uppercase tracking-wider mb-4">
+                                Transform Your Business
+                            </div>
+                            <h2 class="text-4xl/11 font-bold mb-5 text-heading font-ubuntu">Partner with Industry
+                                Leaders</h2>
+                            <p class="text-md/8 text-defalut/80 mb-8">Vestibulum ante ipsum primis in faucibus orci
+                                luctus et ultrices posuere cubilia Curae;
+                                Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget
+                                tortor risus.</p>
+                            <div class="flex flex-col md:flex-row gap-5 md:gap-8 mb-8 py-6 border-y border-defalut/10">
+                                <div>
+                                    <div class="text-2xl font-bold text-aqua-700 mb-1">750+</div>
+                                    <div class="text-sm font-medium text-defalut/60">Enterprise Clients</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold text-aqua-700 mb-1">98%</div>
+                                    <div class="text-sm font-medium text-defalut/60">Client Retention</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold text-aqua-700 mb-1">24/7</div>
+                                    <div class="text-sm font-medium text-defalut/60">Support Coverage</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-7/12 px-2">
+                        <div class="border border-defalut/10 rounded-lg p-10 shadow-[0_2px_4px] shadow-[#00000014]">
+                            <div class="mb-8">
+                                <h3 class="text-2xl font-bold mb-2 text-heading font-ubuntu">Request a Consultation</h3>
+                                <p class="text-sm mb-0 text-defalut/70">Speak with our experts to discuss your business
+                                    requirements</p>
+                            </div>
+                            <div class="flex flex-wrap items-center">
+                                <div class="sm:w-1/2 px-2 mb-8">
+                                    <div class="flex gap-4">
+                                        <div
+                                            class="flex items-center justify-center shrink-0 w-12 h-12 rounded-md bg-aqua-700/8">
+                                            <i class="bi bi-shield-check text-xl text-aqua-700"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold mb-1 text-heading font-ubuntu">Enterprise Security
+                                            </h4>
+                                            <p class="text-sm/5 m-0 text-defalut/70">Mauris blandit aliquet elit, eget
+                                                tincidunt nibh pulvinar a.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-1/2 px-2 mb-8">
+                                    <div class="flex gap-4">
+                                        <div
+                                            class="flex items-center justify-center shrink-0 w-12 h-12 rounded-md bg-aqua-700/8">
+                                            <i class="bi bi-graph-up-arrow text-xl text-aqua-700"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold mb-1 text-heading font-ubuntu">Scalable Solutions
+                                            </h4>
+                                            <p class="text-sm/5 m-0 text-defalut/70">Curabitur non nulla sit amet nisl
+                                                tempus convallis quis ac lectus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-1/2 px-2 mb-8">
+                                    <div class="flex gap-4">
+                                        <div
+                                            class="flex items-center justify-center shrink-0 w-12 h-12 rounded-md bg-aqua-700/8">
+                                            <i class="bi bi-people text-xl text-aqua-700"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold mb-1 text-heading font-ubuntu">Dedicated Support
+                                            </h4>
+                                            <p class="text-sm/5 m-0 text-defalut/70">Pellentesque in ipsum id orci porta
+                                                dapibus vestibulum ac diam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-1/2 px-2 mb-8">
+                                    <div class="flex gap-4">
+                                        <div
+                                            class="flex items-center justify-center shrink-0 w-12 h-12 rounded-md bg-aqua-700/8">
+                                            <i class="bi bi-lightning text-xl text-aqua-700"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold mb-1 text-heading font-ubuntu">Rapid Implementation
+                                            </h4>
+                                            <p class="text-sm/5 m-0 text-defalut/70">Nulla quis lorem ut libero
+                                                malesuada feugiat curabitur arcu erat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col md:flex-row lg:items-center pt-8 border-t border-defalut/10 gap-4">
+                                <a href="javascript:void(0)"
+                                    class="flex-1 inline-block py-3.5 px-8 font-semibold text-center rounded-md bg-aqua-700 
+                                text-white border-2 border-aqua-700 hover:bg-aqua-800 hover:border-aqua-800 transition-all duration-300 ease-in">
+                                    Schedule Consultation
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="flex-1 inline-block py-3.5 px-8 font-semibold text-center rounded-md bg-[#141f33] 
+                                text-defalut border-2 border-defalut/20 hover:bg-aqua-700 hover:border-aqua-700 transition-all duration-300 ease-in">
+                                    Download Brochure
+                                </a>
+                                <div class="mt-0 lg:ml-auto flex shrink-0 items-center gap-2 text-sm text-defalut/70">
+                                    <i class="bi bi-telephone text-aqua-700"></i>
+                                    <span>Or call us at <strong class="text-defalut font-semibold">+1 (555)
+                                            234-5678</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to action Section End -->
+
+        <!-- Pricing Section Start -->
+        <section id="pricing" class="bg-background py-16 sm:py-20">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Pricing</h2>
+                    <span class="absolute left-1/2 transform -translate-x-1/2 w-40 bg-defalut/40 h-px"></span>
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-px w-15 bg-aqua-700 h-0.5"></span>
+                    <p class="mt-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+                <div class="flex flex-wrap mt-10">
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-2 mb-6 lg:mb-0">
+                        <div class="bg-surface border border-defalut/10 rounded-lg p-8 h-full flex flex-col relative hover:border-aqua-700/30 
+                            hover:shadow-[0_4px_12px] hover:shadow-[#00000014] transition-all duration-300">
+                            <div class="border-b border-defalut/8 pb-6 mb-6">
+                                <h3 class="text-2xl font-semibold mb-2 text-heading font-ubuntu">Starter</h3>
+                                <p class="text-defalut/70 m-0">For small teams getting started</p>
+                            </div>
+                            <div class="mb-8">
+                                <div class="flex items-baseline gap-1 mb-2">
+                                    <span class="text-xl font-medium text-heading">$</span>
+                                    <span class="text-5xl font-bold text-heading">29</span>
+                                    <span class="text-defalut/60">/user/month</span>
+                                </div>
+                                <p class="text-sm text-defalut/60 m-0">Billed monthly</p>
+                            </div>
+                            <div class="flex grow mb-8">
+                                <ul>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Up to 10 team members</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">5 GB storage per user</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Basic reporting and analytics</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Email support</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Mobile app access</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-center">
+                                <a href="javascript:void(0)"
+                                    class="block w-full py-3.5 px-7 text-sm bg-aqua-700/10 text-aqua-700 border border-aqua-700/30 
+                                rounded-md font-medium text-center hover:bg-aqua-700/15 hover:border-aqua-700 transition-all duration-300">Start
+                                    Free Trial</a>
+                                <p class="text-xs text-defalut/60 mt-3">14-day free trial, no credit card required</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-2 mb-6 lg:mb-0">
+                        <div class="bg-surface border border-aqua-700 rounded-lg p-8 h-full flex flex-col relative 
+                            shadow-[0_2px_8px] shadow-[#0000001a] transition-all duration-300">
+                            <div class="absolute -top-3.5 left-[50%] transform translate-x-[-50%] bg-aqua-700 text-white py-1.5 px-5 rounded-sm 
+                            text-[13px] font-medium uppercase tracking-wider">Most Popular</div>
+                            <div class="border-b border-defalut/8 pb-6 mb-6">
+                                <h3 class="text-2xl font-semibold mb-2 text-heading font-ubuntu">Professional</h3>
+                                <p class="text-defalut/70 m-0">For growing businesses</p>
+                            </div>
+                            <div class="mb-8">
+                                <div class="flex items-baseline gap-1 mb-2">
+                                    <span class="text-xl font-medium text-heading">$</span>
+                                    <span class="text-5xl font-bold text-heading">59</span>
+                                    <span class="text-defalut/60">/user/month</span>
+                                </div>
+                                <p class="text-sm text-defalut/60 m-0">Billed monthly</p>
+                            </div>
+                            <div class="flex grow mb-8">
+                                <ul>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Unlimited team members</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">50 GB storage per user</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Advanced analytics and reporting</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Priority email and chat support</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Custom integrations</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">API access</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-center">
+                                <a href="javascript:void(0)" class="block w-full py-3.5 px-7 text-sm bg-aqua-700 text-white border border-aqua-700 
+                                rounded-md font-medium text-center hover:bg-aqua-800 transition-all duration-300">Start
+                                    Free Trial</a>
+                                <p class="text-xs text-defalut/60 mt-3">14-day free trial, no credit card required</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-2 mb-6 lg:mb-0">
+                        <div class="bg-surface border border-defalut/10 rounded-lg p-8 h-full flex flex-col relative hover:border-aqua-700/30 
+                            hover:shadow-[0_4px_12px] hover:shadow-[#00000014] transition-all duration-300">
+                            <div class="border-b border-defalut/8 pb-6 mb-6">
+                                <h3 class="text-2xl font-semibold mb-2 text-heading font-ubuntu">Enterprise</h3>
+                                <p class="text-defalut/70 m-0">For large organizations</p>
+                            </div>
+                            <div class="mb-8">
+                                <div class="flex items-baseline gap-1 mb-2">
+                                    <span class="text-3xl font-bold text-heading">Custom Pricing</span>
+                                </div>
+                                <p class="text-sm text-defalut/60 m-0">Tailored to your needs</p>
+                            </div>
+                            <div class="flex grow mb-8">
+                                <ul>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Everything in Professional</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Unlimited storage</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Dedicated account manager</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">24/7 phone support</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3 border-b border-defalut/5">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Advanced security and compliance</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 py-3">
+                                        <i
+                                            class="bi bi-check-circle-fill text-aqua-700 text-lg flex shrink-0 mt-0.5"></i>
+                                        <span class="flex flex-1">Custom SLA and contracts</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-center">
+                                <a href="javascript:void(0)"
+                                    class="block w-full py-3.5 px-7 text-sm bg-aqua-700/10 text-aqua-700 border border-aqua-700/30 
+                                rounded-md font-medium text-center hover:bg-aqua-700/15 hover:border-aqua-700 transition-all duration-300">Contact
+                                    Sales</a>
+                                <p class="text-xs text-defalut/60 mt-3">Schedule a consultation with our team</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-16 pt-8 border-t border-defalut/8">
+                    <p class="text-sm text-defalut/70 mb-4">All plans include: SSL security, 99.9% uptime guarantee,
+                        data backup, and GDPR compliance</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 flex-wrap">
+                        <a href="javascript:void(0)"
+                            class="text-sm font-medium text-aqua-700 hover:text-aqua-800 transition-all duration-300">
+                            Compare all features
+                        </a>
+                        <span class="text-defalut/20 hidden md:block">|</span>
+                        <a href="javascript:void(0)"
+                            class="text-sm font-medium text-aqua-700 hover:text-aqua-800 transition-all duration-300">
+                            View FAQ
+                        </a>
+                        <span class="text-defalut/20 hidden md:block">|</span>
+                        <a href="javascript:void(0)"
+                            class="text-sm font-medium text-aqua-700 hover:text-aqua-800 transition-all duration-300">
+                            Contact Support
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing Section End -->
+
+        <!-- Faq Section Start -->
+        <section id="faq" class="bg-background py-16 sm:py-10">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Frequently Asked Questions
+                    </h2>
+                    <span class="absolute left-1/2 transform -translate-x-1/2 w-40 bg-defalut/40 h-px"></span>
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-px w-15 bg-aqua-700 h-0.5"></span>
+                    <p class="mt-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-10/12 px-2 mt-10">
+                        <div class="faq-item bg-surface border border-defalut/10 rounded-md p-0">
+                            <div class="mb-0 border-b border-defalut/8 transition-all duration-300 ease-in-out group">
+                                <div
+                                    class="faq-btn relative flex items-center justify-between py-6 px-8 cursor-pointer gap-5 transition-all duration-300 
+                                ease-in hover:bg-defalut/5 [&.active_h4]:text-aqua-700 [&.active_.icon]:text-aqua-700 [&.active_.icon]:bg-aqua-700/10">
+                                    <h4 class="flex flex-1 text-heading text-lg/6 font-semibold font-ubuntu transition-colors duration-300 ease-in 
+                                    ">
+                                        Vestibulum ac diam sit amet quam vehicula elementum?</h4>
+                                    <div class="icon flex items-center justify-center shrink-0 w-9 h-9 rounded-sm bg-aqua-700/5 text-heading
+                                    transition-all duration-300 ease-in
+                                  ">
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="faq-content faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="p-[0_32px_24px_32px] overflow-hidden">
+                                        <p class="m-0 text-defalut/80 text-md/6 visible">Curabitur arcu erat, accumsan
+                                            id imperdiet et, porttitor at sem. Donec rutrum
+                                            congue leo eget malesuada. Vestibulum ante ipsum primis in faucibus orci
+                                            luctus et ultrices posuere cubilia curae. Praesent sapien massa, convallis a
+                                            pellentesque nec, egestas non nisi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-0 border-b border-defalut/8 transition-all duration-300 ease-in-out group">
+                                <div
+                                    class="faq-btn relative flex items-center justify-between py-6 px-8 cursor-pointer gap-5 transition-all duration-300 
+                                ease-in hover:bg-defalut/5 [&.active_h4]:text-aqua-700 [&.active_.icon]:text-aqua-700 [&.active_.icon]:bg-aqua-700/10">
+                                    <h4
+                                        class="flex flex-1 text-heading text-lg/6 font-semibold font-ubuntu transition-colors duration-300 ease-in">
+                                        Nulla porttitor accumsan tincidunt mauris blandit?</h4>
+                                    <div class="icon flex items-center justify-center shrink-0 w-9 h-9 rounded-sm bg-aqua-700/5 text-heading
+                                    transition-all duration-300 ease-in">
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="p-[0_32px_24px_32px] overflow-hidden">
+                                        <p class="m-0 text-defalut/80 text-md/6 visible">Nulla porttitor accumsan
+                                            tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras
+                                            ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis
+                                            porttitor volutpat. Sed porttitor lectus nibh.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-0 border-b border-defalut/8 transition-all duration-300 ease-in-out group">
+                                <div
+                                    class="faq-btn relative flex items-center justify-between py-6 px-8 cursor-pointer gap-5 transition-all duration-300 
+                                ease-in hover:bg-defalut/5 [&.active_h4]:text-aqua-700 [&.active_.icon]:text-aqua-700 [&.active_.icon]:bg-aqua-700/10">
+                                    <h4
+                                        class="flex flex-1 text-heading text-lg/6 font-semibold font-ubuntu transition-colors duration-300 ease-in">
+                                        Curabitur aliquet quam id dui posuere blandit proin?</h4>
+                                    <div class="icon flex items-center justify-center shrink-0 w-9 h-9 rounded-sm bg-aqua-700/5 text-heading
+                                    transition-all duration-300 ease-in">
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="p-[0_32px_24px_32px] overflow-hidden">
+                                        <p class="m-0 text-defalut/80 text-md/6 visible">Quisque velit nisi, pretium ut
+                                            lacinia in, elementum id enim. Vestibulum ac diam sit amet quam vehicula
+                                            elementum sed sit amet dui. Donec sollicitudin molestie malesuada.
+                                            Pellentesque in ipsum id orci porta dapibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-0 border-b border-defalut/8 transition-all duration-300 ease-in-out group">
+                                <div
+                                    class="faq-btn relative flex items-center justify-between py-6 px-8 cursor-pointer gap-5 transition-all duration-300 
+                                ease-in hover:bg-defalut/5 [&.active_h4]:text-aqua-700 [&.active_.icon]:text-aqua-700 [&.active_.icon]:bg-aqua-700/10">
+                                    <h4
+                                        class="flex flex-1 text-heading text-lg/6 font-semibold font-ubuntu transition-colors duration-300 ease-in">
+                                        Vivamus
+                                        magna justo lacinia eget consectetur sed?</h4>
+                                    <div class="icon flex items-center justify-center shrink-0 w-9 h-9 rounded-sm bg-aqua-700/5 text-heading
+                                    transition-all duration-300 ease-in">
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="p-[0_32px_24px_32px] overflow-hidden">
+                                        <p class="m-0 text-defalut/80 text-md/6 visible">Sed ut perspiciatis unde omnis
+                                            iste natus error sit voluptatem accusantium doloremque laudantium. Totam rem
+                                            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-0 border-b border-defalut/8 transition-all duration-300 ease-in-out group">
+                                <div
+                                    class="faq-btn relative flex items-center justify-between py-6 px-8 cursor-pointer gap-5 transition-all duration-300 
+                                ease-in hover:bg-defalut/5 [&.active_h4]:text-aqua-700 [&.active_.icon]:text-aqua-700 [&.active_.icon]:bg-aqua-700/10">
+                                    <h4
+                                        class="flex flex-1 text-heading text-lg/6 font-semibold font-ubuntu transition-colors duration-300 ease-in">
+                                        Donec
+                                        sollicitudin molestie malesuada proin eget?</h4>
+                                    <div class="icon flex items-center justify-center shrink-0 w-9 h-9 rounded-sm bg-aqua-700/5 text-heading
+                                    transition-all duration-300 ease-in">
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="p-[0_32px_24px_32px] overflow-hidden">
+                                        <p class="m-0 text-defalut/80 text-md/6 visible">At vero eos et accusamus et
+                                            iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                                            deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                            occaecati. Cupiditate non provident, similique sunt in culpa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-0 border-b border-defalut/8 transition-all duration-300 ease-in-out group">
+                                <div
+                                    class="faq-btn relative flex items-center justify-between py-6 px-8 cursor-pointer gap-5 transition-all duration-300 
+                                ease-in hover:bg-defalut/5 [&.active_h4]:text-aqua-700 [&.active_.icon]:text-aqua-700 [&.active_.icon]:bg-aqua-700/10">
+                                    <h4
+                                        class="flex flex-1 text-heading text-lg/6 font-semibold font-ubuntu transition-colors duration-300 ease-in">
+                                        Pellentesque in ipsum id orci porta dapibus vestibulum?</h4>
+                                    <div class="icon flex items-center justify-center shrink-0 w-9 h-9 rounded-sm bg-aqua-700/5 text-heading
+                                    transition-all duration-300 ease-in">
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="p-[0_32px_24px_32px] overflow-hidden">
+                                        <p class="m-0 text-defalut/80 text-md/6 visible">Curabitur non nulla sit amet
+                                            nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget
+                                            malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at
+                                            tellus. Quisque velit nisi, pretium ut lacinia in.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Faq Section End -->
+
+        <!--Team Section Start -->
+        <section id="team" class="bg-[#141f33] py-16 sm:py-20 scroll-mt-18 overflow-clip">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Team
+                    </h2>
+                    <span class="absolute left-1/2 transform -translate-x-1/2 w-40 bg-defalut/40 h-px"></span>
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-px w-15 bg-aqua-700 h-0.5"></span>
+                    <p class="mt-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+                <div class="flex flex-wrap items-center my-12">
+                    <div class="lg:w-1/2 px-2">
+                        <h2 class="relative text-4xl font-bold mb-5 pb-5 text-heading font-ubuntu">
+                            Our Professional Team
+                            <span class="absolute left-0 bottom-0 w-16 h-1 bg-aqua-700"></span>
+                        </h2>
+                        <p class="text-[17px] max-w-2xl text-defalut/75 mt-0 mb-4">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Ut elit tellus luctus nec ullamcorper mattis pulvinar dapibus
+                            leo.</p>
+                    </div>
+                    <div class="lg:w-1/2 px-2 flex lg:justify-end">
+                        <div class="flex gap-3">
+                            <button class="w-11.5 h-11.5 flex items-center justify-center border-2 border-aqua-700 rounded-full text-aqua-700 text-lg 
+                                cursor-pointer hover:bg-aqua-700 hover:text-white transition-all duration-300 ease-in">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <button class="w-11.5 h-11.5 flex items-center justify-center border-2 border-aqua-700 rounded-full text-aqua-700 text-lg 
+                                cursor-pointer hover:bg-aqua-700 hover:text-white transition-all duration-300 ease-in">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-[10px_5px_40px] touch-pan-y mx-auto relative overflow-hidden z-10 block shrink-0">
+                    <div class="overflow-hidden relative">
+                        <div id="teamSlider" class="flex transition-transform duration-500 ease-in-out">
+                            <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] px-2">
+                                <div class="relative w-full h-auto flex transform group">
+                                    <div
+                                        class="relative rounded-lg overflow-hidden bg-surface shadow-[0_5px_25px] shadow-[#00000014] h-full flex flex-col
+                                        min-h-115 sm:min-h-120 group-hover:-translate-y-2 group-hover:shadow-[0_15px_35px] group-hover:shadow-[#0000001f] transition-all duration-500 ease-in-out">
+                                        <div class="relative overflow-hidden">
+                                            <img src="./images/person1.webp"
+                                                class="w-full aspect-square block object-cover transition-all duration-500 ease-in-out"
+                                                alt="person1">
+                                            <span
+                                                class="absolute left-0 bottom-0 w-full h-[60%] bg-linear-to-t from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0)] hidden group-hover:block transition-all duration-500 ease-in-out z-10"></span>
+                                            <div
+                                                class="absolute z-20 flex gap-2 justify-center w-full -bottom-9 group-hover:bottom-4 transition-all duration-300 ease-in-out">
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out">
+                                                    <i class="bi bi-twitter-x"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-facebook"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-instagram"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-300 ease-in-out"><i class="bi bi-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="p-6 flex flex-col grow">
+                                            <h3 class="text-xl font-bold mb-1 text-heading font-ubuntu">Daniel Chen</h3>
+                                            <span class="block text-sm font-semibold text-aqua-700 mb-4">Marketing
+                                                Specialist</span>
+                                            <p class="text-sm/6 text-defalut/80 mb-0 grow">Excepteur sint occaecat
+                                                cupidatat
+                                                non
+                                                proident, sunt in culpa qui officia deserunt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] px-2">
+                                <div class="relative w-full h-auto flex transform group">
+                                    <div
+                                        class="relative rounded-lg overflow-hidden bg-surface shadow-[0_5px_25px] shadow-[#00000014] h-full flex flex-col
+                                        min-h-115 sm:min-h-120 group-hover:-translate-y-2 group-hover:shadow-[0_15px_35px] group-hover:shadow-[#0000001f] transition-all duration-500 ease-in-out">
+                                        <div class="relative overflow-hidden">
+                                            <img src="./images/person2.webp"
+                                                class="w-full aspect-square block object-cover transition-all duration-500 ease-in-out"
+                                                alt="person2">
+                                            <span
+                                                class="absolute left-0 bottom-0 w-full h-[60%] bg-linear-to-t from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0)] hidden group-hover:block transition-all duration-500 ease-in-out z-10"></span>
+                                            <div
+                                                class="absolute z-20 flex gap-2 justify-center w-full -bottom-9 group-hover:bottom-4 transition-all duration-300 ease-in-out">
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out">
+                                                    <i class="bi bi-twitter-x"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-facebook"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-instagram"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-300 ease-in-out"><i class="bi bi-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="p-6 flex flex-col grow">
+                                            <h3 class="text-xl font-bold mb-1 text-heading font-ubuntu">Emily Rodriguez
+                                            </h3>
+                                            <span class="block text-sm font-semibold text-aqua-700 mb-4">Project
+                                                Manager</span>
+                                            <p class="text-sm/6 text-defalut/80 mb-0 grow">At vero eos et accusamus et
+                                                iusto
+                                                odio
+                                                dignissimos ducimus qui blanditiis praesentium.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] px-2">
+                                <div class="relative w-full h-auto flex transform group">
+                                    <div
+                                        class="relative rounded-lg overflow-hidden bg-surface shadow-[0_5px_25px] shadow-[#00000014] h-full flex flex-col
+                                        min-h-115 sm:min-h-120 group-hover:-translate-y-2 group-hover:shadow-[0_15px_35px] group-hover:shadow-[#0000001f] transition-all duration-500 ease-in-out">
+                                        <div class="relative overflow-hidden">
+                                            <img src="./images/person3.webp"
+                                                class="w-full aspect-square block object-cover transition-all duration-500 ease-in-out"
+                                                alt="person3">
+                                            <span
+                                                class="absolute left-0 bottom-0 w-full h-[60%] bg-linear-to-t from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0)] hidden group-hover:block transition-all duration-500 ease-in-out z-10"></span>
+                                            <div
+                                                class="absolute z-20 flex gap-2 justify-center w-full -bottom-9 group-hover:bottom-4 transition-all duration-300 ease-in-out">
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out">
+                                                    <i class="bi bi-twitter-x"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-facebook"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-instagram"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-300 ease-in-out"><i class="bi bi-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="p-6 flex flex-col grow">
+                                            <h3 class="text-xl font-bold mb-1 text-heading font-ubuntu">Marcus Wilson
+                                            </h3>
+                                            <span class="block text-sm font-semibold text-aqua-700 mb-4">Chief
+                                                Technology
+                                                Officer</span>
+                                            <p class="text-sm/6 text-defalut/80 mb-0 grow">Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit. Ut elit tellus,
+                                                luctus nec.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] px-2">
+                                <div class="relative w-full h-auto flex transform group">
+                                    <div
+                                        class="relative rounded-lg overflow-hidden bg-surface shadow-[0_5px_25px] shadow-[#00000014] h-full flex flex-col
+                                        min-h-115 sm:min-h-120 group-hover:-translate-y-2 group-hover:shadow-[0_15px_35px] group-hover:shadow-[#0000001f] transition-all duration-500 ease-in-out">
+                                        <div class="relative overflow-hidden">
+                                            <img src="./images/person6.webp"
+                                                class="w-full aspect-square block object-cover transition-all duration-500 ease-in-out"
+                                                alt="person6">
+                                            <span
+                                                class="absolute left-0 bottom-0 w-full h-[60%] bg-linear-to-t from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0)] hidden group-hover:block transition-all duration-500 ease-in-out z-10"></span>
+                                            <div
+                                                class="absolute z-20 flex gap-2 justify-center w-full -bottom-9 group-hover:bottom-4 transition-all duration-300 ease-in-out">
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out">
+                                                    <i class="bi bi-twitter-x"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-facebook"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-instagram"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-300 ease-in-out"><i class="bi bi-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="p-6 flex flex-col grow">
+                                            <h3 class="text-xl font-bold mb-1 text-heading font-ubuntu">Sophia Reynolds
+                                            </h3>
+                                            <span class="block text-sm font-semibold text-aqua-700 mb-4">Product
+                                                Designer</span>
+                                            <p class="text-sm/6 text-defalut/80 mb-0 grow">Duis aute irure dolor in
+                                                reprehenderit
+                                                in voluptate velit esse cillum dolore eu fugiat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] px-2">
+                                <div class="relative w-full h-auto flex transform group">
+                                    <div
+                                        class="relative rounded-lg overflow-hidden bg-surface shadow-[0_5px_25px] shadow-[#00000014] h-full flex flex-col
+                                        min-h-115 sm:min-h-120 group-hover:-translate-y-2 group-hover:shadow-[0_15px_35px] group-hover:shadow-[#0000001f] transition-all duration-500 ease-in-out">
+                                        <div class="relative overflow-hidden">
+                                            <img src="./images/person4.webp"
+                                                class="w-full aspect-square block object-cover transition-all duration-500 ease-in-out"
+                                                alt="person4">
+                                            <span
+                                                class="absolute left-0 bottom-0 w-full h-[60%] bg-linear-to-t from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0)] hidden group-hover:block transition-all duration-500 ease-in-out z-10"></span>
+                                            <div
+                                                class="absolute z-20 flex gap-2 justify-center w-full -bottom-9 group-hover:bottom-4 transition-all duration-300 ease-in-out">
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out">
+                                                    <i class="bi bi-twitter-x"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-facebook"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-instagram"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-300 ease-in-out"><i class="bi bi-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="p-6 flex flex-col grow">
+                                            <h3 class="text-xl font-bold mb-1 text-heading font-ubuntu">Jason Parker
+                                            </h3>
+                                            <span class="block text-sm font-semibold text-aqua-700 mb-4">UI/UX
+                                                Designer</span>
+                                            <p class="text-sm/6 text-defalut/80 mb-0 grow">Nemo enim ipsam voluptatem
+                                                quia
+                                                voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] px-2">
+                                <div class="relative w-full h-auto flex transform group">
+                                    <div
+                                        class="relative rounded-lg overflow-hidden bg-surface shadow-[0_5px_25px] shadow-[#00000014] h-full flex flex-col
+                                        min-h-115 sm:min-h-120 group-hover:-translate-y-2 group-hover:shadow-[0_15px_35px] group-hover:shadow-[#0000001f] transition-all duration-500 ease-in-out">
+                                        <div class="relative overflow-hidden">
+                                            <img src="./images/person7.webp"
+                                                class="w-full aspect-square block object-cover transition-all duration-500 ease-in-out"
+                                                alt="person7">
+                                            <span
+                                                class="absolute left-0 bottom-0 w-full h-[60%] bg-linear-to-t from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0)] hidden group-hover:block transition-all duration-500 ease-in-out z-10"></span>
+                                            <div
+                                                class="absolute z-20 flex gap-2 justify-center w-full -bottom-9 group-hover:bottom-4 transition-all duration-300 ease-in-out">
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out">
+                                                    <i class="bi bi-twitter-x"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-facebook"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-500 ease-in-out"><i class="bi bi-instagram"></i></a>
+                                                <a href="#" class="flex items-center justify-center w-9 h-9 bg-white rounded-full text-aqua-700 hover:bg-aqua-700 hover:text-white hover:-translate-y-1 transition-all 
+                                                duration-300 ease-in-out"><i class="bi bi-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="p-6 flex flex-col grow">
+                                            <h3 class="text-xl font-bold mb-1 text-heading font-ubuntu">Olivia Thompson
+                                            </h3>
+                                            <span class="block text-sm font-semibold text-aqua-700 mb-4">Lead
+                                                Developer</span>
+                                            <p class="text-sm/6 text-defalut/80 mb-0 grow">Sed ut perspiciatis unde
+                                                omnis
+                                                iste natus error sit voluptatem accusantium doloremque.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Team Section End -->
+
+        <!-- Contact Section Start -->
+        <section id="contact" class="relative bg-[#0c1527] py-16 sm:py-20 scroll-mt-18 overflow-clip">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Contact
+                    </h2>
+                    <span class="absolute left-1/2 transform -translate-x-1/2 w-40 bg-defalut/40 h-px"></span>
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-px w-15 bg-aqua-700 h-0.5"></span>
+                    <p class="mt-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+                <div class="flex flex-wrap mt-12">
+                    <div class="w-full lg:w-4/12 px-2 mb-5 lg:mb-0">
+                        <div class="flex flex-col gap-4">
+                            <div class="group">
+                                <div
+                                    class="bg-surface p-7 rounded-2xl border border-defalut/6 shadow-[0_4px_20px] shadow-defalut/4 transform group-hover:-translate-y-1 
+                                group-hover:shadow-[0_12px_35px] group-hover:shadow-aqua-700/8 group-hover:border-aqua-700/15 transition-all duration-300 ease-in">
+                                    <div
+                                        class="w-14 h-14 bg-aqua-700/6 rounded-2xl flex items-center justify-center mb-4 transform group-hover:scale-[1.05] group-hover:bg-aqua-700 transition-all duration-300 ease-in">
+                                        <i
+                                            class="bi bi-envelope-paper text-2xl text-aqua-700 group-hover:text-white transition-all duration-300 ease-in"></i>
+                                    </div>
+                                    <h4 class="text-lg font-semibold mb-2 text-heading font-ubuntu">Email Support</h4>
+                                    <p class="text-sm/5 font-medium mb-1.5">support@example.com</p>
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="w-1.5 h-1.5 bg-[#1baab3] rounded-full inline-block"></span>
+                                        <span class="text-[13px] text-defalut/55 flex items-center gap-1.5">Usually
+                                            replies
+                                            in 2 hours</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div
+                                    class="bg-surface p-7 rounded-2xl border border-defalut/6 shadow-[0_4px_20px] shadow-defalut/4 transform group-hover:-translate-y-1 
+                                group-hover:shadow-[0_12px_35px] group-hover:shadow-aqua-700/8 group-hover:border-aqua-700/15 transition-all duration-300 ease-in">
+                                    <div
+                                        class="w-14 h-14 bg-aqua-700/6 rounded-2xl flex items-center justify-center mb-4 transform group-hover:scale-[1.05] group-hover:bg-aqua-700 transition-all duration-300 ease-in">
+                                        <i
+                                            class="bi bi-headset text-2xl text-aqua-700 group-hover:text-white transition-all duration-300 ease-in"></i>
+                                    </div>
+                                    <h4 class="text-lg font-semibold mb-2 text-heading font-ubuntu">Live Chat</h4>
+                                    <p class="text-sm/5 font-medium mb-1.5">Chat with our team</p>
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="w-1.5 h-1.5 bg-[#1baab3] rounded-full inline-block"></span>
+                                        <span class="text-[13px] text-defalut/55 flex items-center gap-1.5">Available
+                                            Mon-Fri, 9AM-6PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div
+                                    class="bg-surface p-7 rounded-2xl border border-defalut/6 shadow-[0_4px_20px] shadow-defalut/4 transform group-hover:-translate-y-1 
+                                group-hover:shadow-[0_12px_35px] group-hover:shadow-aqua-700/8 group-hover:border-aqua-700/15 transition-all duration-300 ease-in">
+                                    <div
+                                        class="w-14 h-14 bg-aqua-700/6 rounded-2xl flex items-center justify-center mb-4 transform group-hover:scale-[1.05] group-hover:bg-aqua-700 transition-all duration-300 ease-in">
+                                        <i
+                                            class="bi bi-pin-map text-2xl text-aqua-700 group-hover:text-white transition-all duration-300 ease-in"></i>
+                                    </div>
+                                    <h4 class="text-lg font-semibold mb-2 text-heading font-ubuntu">Our Location</h4>
+                                    <p class="text-sm/5 font-medium mb-1.5">2847 Market Street San Francisco, CA 94114
+                                    </p>
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="w-1.5 h-1.5 bg-[#1baab3] rounded-full inline-block"></span>
+                                        <span class="text-[13px] text-defalut/55 flex items-center gap-1.5">Open for
+                                            visits</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 flex flex-col gap-3">
+                            <div class="flex items-center gap-3.5 py-4 px-5 bg-aqua-700/3 rounded-xl">
+                                <div class="w-10 h-10 flex items-center justify-center shrink-0 bg-surface rounded-xl">
+                                    <i class="bi bi-shield-check text-xl text-aqua-700"></i>
+                                </div>
+                                <div class="flex flex-col gap-0.5">
+                                    <strong class="text-sm font-semibold text-heading">100% Secure</strong>
+                                    <span class="text-xs text-defalut/60">Your data is protected</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3.5 py-4 px-5 bg-aqua-700/3 rounded-xl">
+                                <div class="w-10 h-10 flex items-center justify-center shrink-0 bg-surface rounded-xl">
+                                    <i class="bi bi-clock-history text-xl text-aqua-700"></i>
+                                </div>
+                                <div class="flex flex-col gap-0.5">
+                                    <strong class="text-sm font-semibold text-heading">Quick Response</strong>
+                                    <span class="text-xs text-defalut/60">We reply within hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-8/12 px-2">
+                        <div
+                            class="shadow-[0_8px_40px] shadow-defalut/6 bg-surface p-12 rounded-3xl border border-defalut/8">
+                            <div class="mb-9">
+                                <div
+                                    class="inline-flex items-center gap-2 py-2 px-4 bg-[linear-gradient(135deg,color-mix(in_srgb,#279ae4,transparent_92%),color-mix(in_srgb,#279ae4,transparent_96%))] rounded-full text-[13px] font-semibold text-aqua-700 mb-5">
+                                    <i class="bi bi-stars text-sm"></i>
+                                    <span>Get Started Today</span>
+                                </div>
+                                <h2 class="text-3xl font-bold mb-3.5 text-heading font-ubuntu">Send us a message</h2>
+                                <p class="text-md/6 text-defalut/75 mb-0">Consectetur adipiscing elit sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud
+                                    exercitation.</p>
+                            </div>
+                            <form method="post">
+                                <div class="flex flex-wrap mt-10">
+                                    <div class="w-full md:w-1/2 pr-0 md:pr-2">
+                                        <input type="text" name="name" id="name" placeholder="Full Name" class="w-full h-14 border-2 border-defalut/10 
+                                        rounded-xl bg-surface text-[15px] py-4 px-5 focus:border-aqua-700 focus:shadow-[0_0_0_4px] focus:shadow-aqua-700/6 
+                                        focus:outline-none transition-all duration-300 ease-in" />
+                                    </div>
+                                    <div class="w-full md:w-1/2 pl-0 md:pl-2 mt-3 md:mt-0">
+                                        <input type="email" name="email" id="email" placeholder="Email Address" class="w-full h-14 border-2 border-defalut/10 
+                                        rounded-xl bg-surface text-[15px] py-4 px-5 focus:border-aqua-700 focus:shadow-[0_0_0_4px] focus:shadow-aqua-700/6 
+                                        focus:outline-none transition-all duration-300 ease-in" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap mt-3">
+                                    <div class="w-full md:w-1/2 pr-0 md:pr-2">
+                                        <input type="text" name="contact" id="contact"
+                                            placeholder="Phone Number (Optional)" class="w-full h-14 border-2 border-defalut/10 
+                                        rounded-xl bg-surface text-[15px] py-4 px-5 focus:border-aqua-700 focus:shadow-[0_0_0_4px] focus:shadow-aqua-700/6 
+                                        focus:outline-none transition-all duration-300 ease-in" />
+                                    </div>
+                                    <div class="w-full md:w-1/2 pl-0 md:pl-2 mt-3 md:mt-0">
+                                        <select name="subject" id="subject" class="appearance-none bg-[url('./images/download.svg')] bg-no-repeat bg-position-[right_20px_center] bg-size-[16px_12px] pr-12 w-full h-14 border-2 border-defalut/10 
+                                        rounded-xl bg-surface text-[15px] py-4 px-5 focus:border-aqua-700 focus:shadow-[0_0_0_4px] focus:shadow-aqua-700/6 
+                                        focus:outline-none transition-all duration-300 ease-in">
+                                            <option value="">Select Inquiry Type</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="support">Technical Support</option>
+                                            <option value="sales">Sales Question</option>
+                                            <option value="partnership">Partnership</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <textarea name="message" id="message" placeholder="Tell us more about your needs"
+                                        class="w-full h-auto! min-h-36 py-4 px-5 resize-none border-2 border-defalut/10 
+                                        rounded-xl bg-surface text-[15px] focus:border-aqua-700 focus:shadow-[0_0_0_4px] focus:shadow-aqua-700/6 
+                                        focus:outline-none transition-all duration-300 ease-in"></textarea>
+                                </div>
+                                <div class="my-3 group">
+                                    <button class="w-full bg-aqua-700 text-white border-none py-4.5 px-9 rounded-xl font-semibold flex items-center justify-center gap-2.5 mt-6 shadow-[0_4px_16px] 
+                                    shadow-aqua-700/20 group-hover:bg-[#238bcd] transform group-hover:-translate-y-0.5 group-hover:shadow-[0_8px_28px] 
+                                    group-hover:shadow-aqua-700/30 transition-all duration-300 ease-in cursor-pointer">
+                                        <span>Send Message</span>
+                                        <i
+                                            class="bi bi-arrow-right text-lg transform group-hover:translate-x-1 transition-all duration-300 ease-in cursor-pointer"></i>
+                                    </button>
+                                </div>
+                                <div class="flex items-center justify-center gap-2 mt-4 text-[13px] text-defalut/60">
+                                    <i class="bi bi-info-circle text-sm text-aqua-700"></i>
+                                    <span>We typically respond within 24 hours on business days</span>
+                                </div>
+                            </form>
+                            <div class="mt-10 pt-8 border-t border-defalut/8">
+                                <div class="flex flex-col sm:flex-row gap-5 mb-8">
+                                    <div class="block flex-1 text-center p-5 bg-aqua-700/3 rounded-xl">
+                                        <div class="text-2xl font-bold text-aqua-700 mb-1.5">4.9/5</div>
+                                        <div class="text-[13px] font-medium text-defalut/65">Customer Rating</div>
+                                    </div>
+                                    <div class="block flex-1 text-center p-5 bg-aqua-700/3 rounded-xl">
+                                        <div class="text-2xl font-bold text-aqua-700 mb-1.5">12k+</div>
+                                        <div class="text-[13px] font-medium text-defalut/65">Happy Customers</div>
+                                    </div>
+                                    <div class="block flex-1 text-center p-5 bg-aqua-700/3 rounded-xl">
+                                        <div class="text-2xl font-bold text-aqua-700 mb-1.5">24/7</div>
+                                        <div class="text-[13px] font-medium text-defalut/65">Support Available</div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-sm text-defalut/70 mb-4">Or reach us on social media</p>
+                                    <div class="flex justify-center gap-3">
+                                        <a href="javascript:void(0)" class="w-12 h-12 bg-aqua-700/4 rounded-xl flex items-center justify-center text-aqua-700
+                                        hover:bg-aqua-700 hover:text-white transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px] hover:shadow-aqua-700/20 
+                                        transition-all duration-300 ease-in">
+                                            <i class="bi bi-facebook text-lg"></i>
+                                        </a>
+                                        <a href="javascript:void(0)" class="w-12 h-12 bg-aqua-700/4 rounded-xl flex items-center justify-center text-aqua-700
+                                        hover:bg-aqua-700 hover:text-white transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px] hover:shadow-aqua-700/20 
+                                        transition-all duration-300 ease-in">
+                                            <i class="bi bi-twitter-x text-lg"></i>
+                                        </a>
+                                        <a href="javascript:void(0)" class="w-12 h-12 bg-aqua-700/4 rounded-xl flex items-center justify-center text-aqua-700
+                                        hover:bg-aqua-700 hover:text-white transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px] hover:shadow-aqua-700/20 
+                                        transition-all duration-300 ease-in">
+                                            <i class="bi bi-instagram text-lg"></i>
+                                        </a>
+                                        <a href="javascript:void(0)" class="w-12 h-12 bg-aqua-700/4 rounded-xl flex items-center justify-center text-aqua-700
+                                        hover:bg-aqua-700 hover:text-white transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px] hover:shadow-aqua-700/20 
+                                        transition-all duration-300 ease-in">
+                                            <i class="bi bi-linkedin text-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+
+    </main>
+    <!-- Main Section End -->
+
+    <!-- Footer Section Start -->
+    <footer id="footer" class="text-defalut bg-[#141f33] text-sm relative">
+        <div class="container max-w-7xl mx-auto pt-12 border-t border-defalut/10 px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 lg:w-4/12 mb-5 lg:mb-0">
+                    <a href="javascript:void(0)" class="flex items-center mb-6">
+                        <span class="text-heading font-ubuntu text-[26px] font-bold tracking-[1px]">Aventro</span>
+                    </a>
+                    <div class="pt-4">
+                        <p class="mb-1 font-ubuntu">A108 Adam Street</p>
+                        <p class="mb-1 font-ubuntu">New York, NY 535022</p>
+                        <p class="mt-4 mb-1">
+                            <strong class="font-extrabold">Phone:</strong>
+                            <span>+1 5589 55488 55</span>
+                        </p>
+                        <p class="mb-1">
+                            <strong class="font-extrabold">Email:</strong>
+                            <span>info@example.com</span>
+                        </p>
+                    </div>
+                    <div class="mt-6 flex">
+                        <a href="javascript:void(0)"
+                            class="flex items-center justify-center w-10 h-10 rounded-full border border-defalut/50 text-defalut/80
+                                                mr-2.5 hover:text-aqua-700 hover:border-aqua-700 transition-all duration-300 ease-in">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="javascript:void(0)"
+                            class="flex items-center justify-center w-10 h-10 rounded-full border border-defalut/50 text-defalut/80
+                                                mr-2.5 hover:text-aqua-700 hover:border-aqua-700 transition-all duration-300 ease-in">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="javascript:void(0)"
+                            class="flex items-center justify-center w-10 h-10 rounded-full border border-defalut/50 text-defalut/80
+                                                mr-2.5 hover:text-aqua-700 hover:border-aqua-700 transition-all duration-300 ease-in">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="javascript:void(0)"
+                            class="flex items-center justify-center w-10 h-10 rounded-full border border-defalut/50 text-defalut/80
+                                                mr-2.5 hover:text-aqua-700 hover:border-aqua-700 transition-all duration-300 ease-in">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/12 lg:w-2/12 mb-5 lg:mb-0">
+                    <h4 class="text-[16px] font-bold relative pb-3 text-heading font-ubuntu">Useful Links</h4>
+                    <ul class="p-0 m-0">
+                        <li class="pb-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Home</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">About
+                                us</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Services</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Terms
+                                of service</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Privacy
+                                policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-3/12 lg:w-2/12 mb-5 lg:mb-0">
+                    <h4 class="text-[16px] font-bold relative pb-3 text-heading font-ubuntu">Our Services</h4>
+                    <ul class="p-0 m-0">
+                        <li class="pb-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Web
+                                Design</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Web
+                                Development</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Product
+                                Management</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Marketing</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Graphic
+                                Design</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-3/12 lg:w-2/12 mb-5 lg:mb-0">
+                    <h4 class="text-[16px] font-bold relative pb-3 text-heading font-ubuntu">Hic solutasetp</h4>
+                    <ul class="p-0 m-0">
+                        <li class="pb-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Molestiae
+                                accusamus iure</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Excepturi
+                                dignissimos</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Suscipit
+                                distinctio</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Dilecta</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Sit
+                                quas consectetur</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-3/12 lg:w-2/12 mb-5 lg:mb-0">
+                    <h4 class="text-[16px] font-bold relative pb-3 text-heading font-ubuntu">Nobis illum</h4>
+                    <ul class="p-0 m-0">
+                        <li class="pb-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Ipsam</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Laudantium
+                                dolorum</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Dinera</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Trodelas</a>
+                        </li>
+                        <li class="py-2 flex items-center">
+                            <a href="javascript:void(0)"
+                                class="text-defalut/70 inline-block hover:text-aqua-700 transition-all duration-300 ease-in">Flexo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="py-6 border-t border-defalut/10 text-center mt-6">
+                <p class="mb-0">©
+                    <span>Copyright</span>
+                    <strong class="py-1 font-extrabold">Aventro</strong>
+                    <span>All Rights Reserved</span>
+                </p>
+                <div class="mt-2 text-[13px]">Designed by
+                    <a href="javascript:void(0)"
+                        class="text-aqua-700 hover:text-aqua-700/75 transition-all duration-300 ease-in">Pooja Patel</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a id="scrollTopBtn" href="#"
+        class="fixed right-4 bottom-4 z-99999 opacity-0 pointer-events-none flex items-center justify-center bg-aqua-700 w-11 h-11 rounded-full
+         hover:bg-aqua-700/80 transition-all duration-300 ease-in">
+        <i class="bi bi-arrow-up-short text-2xl text-white"></i>
+    </a>
+    <!-- Footer Section End -->
+
+    <script src="./script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
