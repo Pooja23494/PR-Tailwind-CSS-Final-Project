@@ -12,10 +12,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-    <link rel="stylesheet" href="./main.css" type="text/css" />
+    <link rel="stylesheet" href="./src/output.css" type="text/css" />
     <style>
         .scrolled {
-            background-color: rgba(13, 22, 39, 0.9); 
+            background-color: rgba(13, 22, 39, 0.9);
             box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
         }
     </style>
@@ -24,7 +24,8 @@
 <body class="text-defalut font-roboto">
 
     <!-- Header Section Start -->
-    <header id="site-header" class="py-4 fixed top-0 left-0 right-0 z-997 bg-transparent transition-all duration-300 ease-in">
+    <header id="site-header"
+        class="py-4 fixed top-0 left-0 right-0 z-997 bg-transparent transition-all duration-300 ease-in">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div class="flex justify-between items-center h-16">
                 <a href="javascript:void(0)">
@@ -32,13 +33,13 @@
                 </a>
                 <ul class="hidden lg:flex justify-between items-center font-inter text-white/60 space-x-8">
                     <li class="relative py-3.5">
-                        <a href="javascript:void(0)" class="relative text-md text-white">
+                        <a href="#home" class="relative text-md text-white">
                             Home
                         </a>
                         <span class="absolute top-full start-0 h-0.5 w-full bg-aqua-700"></span>
                     </li>
                     <li class="relative group py-3.5">
-                        <a href="javascript:void(0)"
+                        <a href="#about"
                             class="relative text-md group-hover:text-white transition-all duration-300 ease-in-out">
                             About
                         </a>
@@ -46,7 +47,7 @@
                             class="absolute top-full start-0 h-0.5 w-0 group-hover:w-full bg-aqua-700 transition-all duration-300 ease-in-out"></span>
                     </li>
                     <li class="relative group py-3.5">
-                        <a href="javascript:void(0)"
+                        <a href="#services"
                             class="relative text-md group-hover:text-white transition-all duration-300 ease-in-out">
                             Services
                         </a>
@@ -54,7 +55,7 @@
                             class="absolute top-full start-0 h-0.5 w-0 group-hover:w-full bg-aqua-700 transition-all duration-300 ease-in-out"></span>
                     </li>
                     <li class="relative group py-3.5">
-                        <a href="javascript:void(0)"
+                        <a href="#pricing"
                             class="relative text-md group-hover:text-white transition-all duration-300 ease-in-out">
                             Pricing
                         </a>
@@ -62,7 +63,7 @@
                             class="absolute top-full start-0 h-0.5 w-0 group-hover:w-full bg-aqua-700 transition-all duration-300 ease-in-out"></span>
                     </li>
                     <li class="relative group py-3.5">
-                        <a href="javascript:void(0)"
+                        <a href="#team"
                             class="relative text-md group-hover:text-white transition-all duration-300 ease-in-out">
                             Team
                         </a>
@@ -110,7 +111,7 @@
                     </li>
 
                     <li class="relative group py-3.5">
-                        <a href="javascript:void(0)"
+                        <a href="#contact"
                             class="relative text-md group-hover:text-white transition-all duration-300 ease-in-out">
                             Contact
                         </a>
@@ -279,7 +280,7 @@
         <!-- Hero Section End -->
 
         <!-- About Section Start -->
-        <section id="about" class="bg-background py-16 sm:py-20">
+        <section id="about" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
             <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">About</h2>
@@ -290,7 +291,7 @@
                     </p>
                 </div>
                 <div class="flex flex-wrap items-center mt-15">
-                    <div class="w-full lg:w-1/2 px-4">
+                    <div class="w-full lg:w-1/2 px-4 mb-5 lg:mb-0">
                         <img src="./images/about-21.webp" class="w-full block rounded-2xl" alt="about-21">
                     </div>
                     <div class="w-full lg:w-1/2 px-4">
@@ -356,7 +357,7 @@
         <!-- About Section End -->
 
         <!-- Services Section Start -->
-        <section id="services" class="bg-background py-16 sm:py-10">
+        <section id="services" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
             <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Services</h2>
@@ -519,7 +520,7 @@
         <!-- Services Section End -->
 
         <!-- Features Section Start -->
-        <section id="features" class="bg-background py-16 sm:py-10">
+        <section id="features" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
             <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-wrap items-center">
                     <div class="lg:w-5/12 px-2">
@@ -667,7 +668,7 @@
         <!-- Features Section End -->
 
         <!-- Tabs Section Start -->
-        <section id="tabs" class="bg-background py-16 sm:py-10 scroll-mt-18 overflow-clip">
+        <section id="tabs" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
             <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <ul
                     class="w-full border-none flex flex-col md:flex-row gap-4 justify-center md:gap-0 bg-surface rounded-lg p-2 mb-20 shadow-[0_2px_20px] shadow-defalut/6">
@@ -925,7 +926,7 @@
         <!-- Call to action Section End -->
 
         <!-- Pricing Section Start -->
-        <section id="pricing" class="bg-background py-16 sm:py-20">
+        <section id="pricing" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
             <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Pricing</h2>
@@ -1130,7 +1131,7 @@
         <!-- Pricing Section End -->
 
         <!-- Faq Section Start -->
-        <section id="faq" class="bg-background py-16 sm:py-10">
+        <section id="faq" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
             <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Frequently Asked Questions
@@ -1931,8 +1932,7 @@
         </div>
     </footer>
 
-    <a id="scrollTopBtn" href="#"
-        class="fixed right-4 bottom-4 z-99999 opacity-0 pointer-events-none flex items-center justify-center bg-aqua-700 w-11 h-11 rounded-full
+    <a id="scrollTopBtn" href="#" class="fixed right-4 bottom-4 z-99999 opacity-0 pointer-events-none flex items-center justify-center bg-aqua-700 w-11 h-11 rounded-full
          hover:bg-aqua-700/80 transition-all duration-300 ease-in">
         <i class="bi bi-arrow-up-short text-2xl text-white"></i>
     </a>
