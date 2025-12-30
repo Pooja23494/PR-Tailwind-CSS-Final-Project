@@ -18,6 +18,12 @@ closeMenu.addEventListener("click", () => {
     mobileMenu.classList.add("translate-x-full");
 });
 
+mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.add("translate-x-full");
+    });
+});
+
 // Dropdown Toggle
 document.querySelectorAll(".dropdown-toggle").forEach(btn => {
     btn.addEventListener("click", () => {
