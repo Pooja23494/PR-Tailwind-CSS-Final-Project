@@ -1,10 +1,10 @@
 // Header Background color
 const header = document.getElementById('site-header');
 
-  window.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 50);
-  });
-  
+});
+
 // Mobile Menu
 const menuBtn = document.getElementById("menu-btn");
 const closeMenu = document.getElementById("close-menu");
@@ -31,6 +31,27 @@ document.querySelectorAll(".deep-toggle").forEach(btn => {
     btn.addEventListener("click", () => {
         btn.nextElementSibling.classList.toggle("hidden");
         btn.querySelector("i").classList.toggle("rotate-180");
+    });
+});
+
+// tab change
+
+const tabs = document.querySelectorAll('.tab-btn');
+const panes = document.querySelectorAll('.tab-content');
+const tabItems = document.querySelectorAll('#tabs li');
+
+tabItems.forEach(li => li.classList.add('group'));
+tabItems[0].classList.remove('group');
+
+tabs.forEach((tab, index) => {
+    tab.addEventListener('click', (e) => {
+        e.preventDefault();
+        tabs.forEach(t => t.classList.remove('bg-[#0d6efd]'));
+        panes.forEach(p => p.classList.add('hidden'));
+        tabItems.forEach(li => li.classList.add('group'));
+        tab.classList.add('bg-[#0d6efd]');
+        document.getElementById(tab.dataset.tab).classList.remove('hidden');
+        tabItems[index].classList.remove('group');
     });
 });
 

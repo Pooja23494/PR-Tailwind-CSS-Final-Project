@@ -26,7 +26,7 @@
     <!-- Header Section Start -->
     <header id="site-header"
         class="py-4 fixed top-0 left-0 right-0 z-997 bg-transparent transition-all duration-300 ease-in">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28">
             <div class="flex justify-between items-center h-16">
                 <a href="javascript:void(0)">
                     <h1 class="text-3xl font-bold text-white font-ubuntu">Aventro</h1>
@@ -196,7 +196,8 @@
             <div class="relative min-h-screen pt-100 py-220 md:py-120 lg:py-100">
                 <img src="./images/bg.webp" class="absolute inset-0 w-full h-full bg-cover object-cover" alt="bg">
                 <div class="absolute inset-0 bg-background/80">
-                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-start lg:items-center">
+                    <div
+                        class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28 h-full flex items-start lg:items-center">
                         <div class="flex flex-col lg:flex-row items-center gap-12 w-full">
                             <div class="w-full lg:w-1/2 text-center lg:text-left mt-25">
                                 <span
@@ -281,7 +282,7 @@
 
         <!-- About Section Start -->
         <section id="about" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
-            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">About</h2>
                     <span class="absolute left-1/2 transform -translate-x-1/2 w-40 bg-defalut/40 h-px"></span>
@@ -358,7 +359,7 @@
 
         <!-- Services Section Start -->
         <section id="services" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
-            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Services</h2>
                     <span class="absolute left-1/2 transform -translate-x-1/2 w-40 bg-defalut/40 h-px"></span>
@@ -521,7 +522,7 @@
 
         <!-- Features Section Start -->
         <section id="features" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
-            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28">
                 <div class="flex flex-wrap items-center">
                     <div class="lg:w-5/12 px-2">
                         <div class="pr-10 mb-14 lg:mb-0">
@@ -669,14 +670,14 @@
 
         <!-- Tabs Section Start -->
         <section id="tabs" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
-            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28">
                 <ul
                     class="w-full border-none flex flex-col md:flex-row gap-4 justify-center md:gap-0 bg-surface rounded-lg p-2 mb-20 shadow-[0_2px_20px] shadow-defalut/6">
-                    <li class="flex flex-none md:flex-1 cursor-pointer">
-                        <a href="javascript:void(0)"
-                            class="w-full block bg-[#0d6efd] border-none p-0 rounded-md relative overflow-hidden transition-all duration-300 ease-in">
+                    <li class="flex flex-none md:flex-1 cursor-pointer group">
+                        <a href="#tab-pane-1" data-tab="tab-pane-1"
+                            class="tab-btn w-full block bg-[#0d6efd] border-none p-0 rounded-md relative overflow-hidden group-hover:bg-aqua-700/5  transition-all duration-300 ease-in">
                             <div class="flex items-center gap-4 py-4 px-5 md:py-5 md:px-6">
-                                <span class="text-white bg-white/15 w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 
+                                <span class="text-white bg-white/15 group-hover:text-aqua-700 group-hover:bg-aqua-700/15 w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 
                                             transition-all duration-300 ease-in">01</span>
                                 <div class="text-left">
                                     <h6 class="mb-0.5 text-sm font-medium transition-all duration-300 ease-in">
@@ -688,8 +689,8 @@
                         </a>
                     </li>
                     <li class="flex flex-none md:flex-1 cursor-pointer group">
-                        <a href="javascript:void(0)"
-                            class="w-full block border-none p-0 rounded-md relative overflow-hidden group-hover:bg-aqua-700/5 transition-all duration-300 ease-in">
+                        <a href="#tab-pane-2" data-tab="tab-pane-2"
+                            class="tab-btn w-full block border-none p-0 rounded-md relative overflow-hidden group-hover:bg-aqua-700/5 transition-all duration-300 ease-in">
                             <div class="flex items-center gap-4 py-4 px-5 md:py-5 md:px-6">
                                 <span class="text-white group-hover:text-aqua-700 bg-white/15 group-hover:bg-aqua-700/15 w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 
                                             transition-all duration-300 ease-in">02</span>
@@ -703,8 +704,8 @@
                         </a>
                     </li>
                     <li class="flex flex-none md:flex-1 cursor-pointer group">
-                        <a href="javascript:void(0)"
-                            class="w-full block border-none p-0 rounded-md relative overflow-hidden group-hover:bg-aqua-700/5 transition-all duration-300 ease-in">
+                        <a href="#tab-pane-3" data-tab="tab-pane-3"
+                            class="tab-btn w-full block border-none p-0 rounded-md relative overflow-hidden group-hover:bg-aqua-700/5 transition-all duration-300 ease-in">
                             <div class="flex items-center gap-4 py-4 px-5 md:py-5 md:px-6">
                                 <span class="text-white group-hover:text-aqua-700 bg-white/15 group-hover:bg-aqua-700/15 w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 
                                             transition-all duration-300 ease-in">03</span>
@@ -718,8 +719,8 @@
                         </a>
                     </li>
                     <li class="flex flex-none md:flex-1 cursor-pointer group">
-                        <a href="javascript:void(0)"
-                            class="w-full block border-none p-0 rounded-md relative overflow-hidden group-hover:bg-aqua-700/5 transition-all duration-300 ease-in">
+                        <a href="#tab-pane-4" data-tab="tab-pane-4"
+                            class="tab-btn w-full block border-none p-0 rounded-md relative overflow-hidden group-hover:bg-aqua-700/5 transition-all duration-300 ease-in">
                             <div class="flex items-center gap-4 py-4 px-5 md:py-5 md:px-6">
                                 <span class="text-white group-hover:text-aqua-700 bg-white/15 group-hover:bg-aqua-700/15 w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 
                                             transition-all duration-300 ease-in">04</span>
@@ -733,67 +734,283 @@
                         </a>
                     </li>
                 </ul>
-                <div class="flex flex-wrap items-center">
-                    <div class="lg:w-1/2 px-2">
-                        <div class="pr-10 mb-14 lg:mb-0">
-                            <div
-                                class="inline-flex items-center gap-2 py-2 px-4 bg-aqua-700/8 rounded-4xl text-xs font-medium text-aqua-700 mb-6 tracking-tight">
-                                <i class="bi bi-lightbulb text-sm"></i>
-                                <span>Innovation Hub</span>
-                            </div>
-                            <h3 class="text-4xl/11 mb-6 font-light text-heading font-ubuntu">Revolutionary Design
-                                Thinking</h3>
-                            <p class="text-md/10 text-defalut/75 mb-10">Sed ut perspiciatis unde omnis natus error sit
-                                voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo
-                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                            </p>
-                            <div class="grid grid-cols-2 gap-10 text-left mb-10">
-                                <div>
-                                    <span class="block text-2xl font-light text-aqua-700 mb-1">145%</span>
-                                    <span class="text-xs text-defalut/60 uppercase tracking-wider">Active Users</span>
+                <div id="tab-pane-1" class="tab-content">
+                    <div class="flex flex-wrap items-center">
+                        <div class="lg:w-1/2 px-2">
+                            <div class="pr-10 mb-14 lg:mb-0">
+                                <div
+                                    class="inline-flex items-center gap-2 py-2 px-4 bg-aqua-700/8 rounded-4xl text-xs font-medium text-aqua-700 mb-6 tracking-tight">
+                                    <i class="bi bi-lightbulb text-sm"></i>
+                                    <span>Innovation Hub</span>
                                 </div>
-                                <div>
-                                    <span class="block text-2xl font-light text-aqua-700 mb-1">28K</span>
-                                    <span class="text-xs text-defalut/60 uppercase tracking-wider">Ideas
-                                        Generated</span>
+                                <h3 class="text-4xl/11 mb-6 font-light text-heading font-ubuntu">Revolutionary Design
+                                    Thinking</h3>
+                                <p class="text-md/10 text-defalut/75 mb-10">Sed ut perspiciatis unde omnis natus error
+                                    sit
+                                    voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab
+                                    illo
+                                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                                <div class="grid grid-cols-2 gap-10 text-left mb-10">
+                                    <div>
+                                        <span class="block text-2xl font-light text-aqua-700 mb-1">145%</span>
+                                        <span class="text-xs text-defalut/60 uppercase tracking-wider">Active
+                                            Users</span>
+                                    </div>
+                                    <div>
+                                        <span class="block text-2xl font-light text-aqua-700 mb-1">28K</span>
+                                        <span class="text-xs text-defalut/60 uppercase tracking-wider">Ideas
+                                            Generated</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mb-10">
-                                <div class="flex items-start gap-3 mb-4">
-                                    <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
-                                    <span class="text-sm">Nemo enim ipsam voluptatem quia voluptas sit</span>
+                                <div class="mb-10">
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Nemo enim ipsam voluptatem quia voluptas sit</span>
+                                    </div>
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Aspernatur aut odit fugit sed quia consequuntur</span>
+                                    </div>
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Magni dolores eos qui ratione voluptatem</span>
+                                    </div>
                                 </div>
-                                <div class="flex items-start gap-3 mb-4">
-                                    <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
-                                    <span class="text-sm">Aspernatur aut odit fugit sed quia consequuntur</span>
-                                </div>
-                                <div class="flex items-start gap-3 mb-4">
-                                    <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
-                                    <span class="text-sm">Magni dolores eos qui ratione voluptatem</span>
-                                </div>
-                            </div>
-                            <div class="group">
-                                <a href="javascript:void(0)" class="inline-flex items-center gap-2 group-hover:gap-3 text-sm font-medium text-aqua-700 group-hover:text-aqua-700/80 
+                                <div class="group">
+                                    <a href="javascript:void(0)" class="inline-flex items-center gap-2 group-hover:gap-3 text-sm font-medium text-aqua-700 group-hover:text-aqua-700/80 
                                     transition-all duration-300 ease-in">
-                                    Explore Innovation
-                                    <i
-                                        class="bi bi-arrow-up-right group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in">
-                                    </i>
-                                </a>
+                                        Explore Innovation
+                                        <i
+                                            class="bi bi-arrow-up-right group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in">
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 px-2">
+                            <div class="relative pl-0 lg:pl-10">
+                                <img src="./images/features-2.webp" class="w-full block rounded-lg" alt="features-2">
+                                <div class="absolute bottom-5 end-5">
+                                    <div class="bg-surface backdrop-blur-md rounded-xl py-4 px-5 flex items-center gap-3 shadow-[0_8px_30px] shadow-defalut/15 
+                                    border border-defalut/10 transition-all ease-in-out animate-updown">
+                                        <i class="bi bi-lightning-charge text-xl text-aqua-700"></i>
+                                        <div>
+                                            <span
+                                                class="block text-[10px] text-defalut/60 uppercase tracking-wider mb-0.5">Speed</span>
+                                            <strong class="block text-[13px] font-semibold text-heading">3x
+                                                Faster</strong>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 px-2">
-                        <div class="relative pl-0 lg:pl-10">
-                            <img src="./images/features-2.webp" class="w-full block rounded-lg" alt="features-2">
-                            <div class="absolute bottom-5 end-5">
-                                <div class="bg-surface backdrop-blur-md rounded-xl py-4 px-5 flex items-center gap-3 shadow-[0_8px_30px] shadow-defalut/15 
-                                    border border-defalut/10 transition-all ease-in-out animate-updown">
-                                    <i class="bi bi-lightning-charge text-xl text-aqua-700"></i>
+                </div>
+                <div id="tab-pane-2" class="tab-content hidden">
+                    <div class="flex flex-wrap items-center">
+                        <div class="lg:w-1/2 px-2">
+                            <div class="pr-10 mb-14 lg:mb-0">
+                                <div
+                                    class="inline-flex items-center gap-2 py-2 px-4 bg-aqua-700/8 rounded-4xl text-xs font-medium text-aqua-700 mb-6 tracking-tight">
+                                    <i class="bi bi-compass text-sm"></i>
+                                    <span>Strategic Planning</span>
+                                </div>
+                                <h3 class="text-4xl/11 mb-6 font-light text-heading font-ubuntu">Data-Driven Business
+                                    Strategy</h3>
+                                <p class="text-md/10 text-defalut/75 mb-10">At vero eos et accusamus et iusto odio
+                                    dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                                    quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+                                </p>
+                                <div class="grid grid-cols-2 gap-10 text-left mb-10">
                                     <div>
+                                        <span class="block text-2xl font-light text-aqua-700 mb-1">234%</span>
+                                        <span class="text-xs text-defalut/60 uppercase tracking-wider">Growth
+                                            Rate</span>
+                                    </div>
+                                    <div>
+                                        <span class="block text-2xl font-light text-aqua-700 mb-1">156</span>
+                                        <span class="text-xs text-defalut/60 uppercase tracking-wider">Strategies</span>
+                                    </div>
+                                </div>
+                                <div class="mb-10">
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Similique sunt in culpa qui officia deserunt</span>
+                                    </div>
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Mollitia animi id est laborum et dolorum fuga</span>
+                                    </div>
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Et harum quidem rerum facilis est expedita</span>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <a href="javascript:void(0)" class="inline-flex items-center gap-2 group-hover:gap-3 text-sm font-medium text-aqua-700 group-hover:text-aqua-700/80 
+                                    transition-all duration-300 ease-in">
+                                        View Strategy
+                                        <i
+                                            class="bi bi-arrow-up-right group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in">
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 px-2">
+                            <div class="relative pl-0 lg:pl-10">
+                                <img src="./images/features-4.webp" class="w-full block rounded-lg" alt="features-4">
+                                <div class="absolute bottom-5 end-5">
+                                    <div class="bg-surface backdrop-blur-md rounded-xl py-4 px-5 flex items-center gap-3 shadow-[0_8px_30px] shadow-defalut/15 
+                                    border border-defalut/10 transition-all ease-in-out animate-updown">
+                                        <i class="bi bi-graph-up-arrow text-xl text-aqua-700"></i>
+                                        <div>
+                                            <span
+                                                class="block text-[10px] text-defalut/60 uppercase tracking-wider mb-0.5">Growth</span>
+                                            <strong class="block text-[13px] font-semibold text-heading">+189%
+                                                ROI</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-pane-3" class="tab-content hidden">
+                    <div class="flex flex-wrap items-center">
+                        <div class="lg:w-1/2 px-2">
+                            <div class="pr-10 mb-14 lg:mb-0">
+                                <div
+                                    class="inline-flex items-center gap-2 py-2 px-4 bg-aqua-700/8 rounded-4xl text-xs font-medium text-aqua-700 mb-6 tracking-tight">
+                                    <i class="bi bi-speedometer2 text-sm"></i>
+                                    <span>High Performance</span>
+                                </div>
+                                <h3 class="text-4xl/11 mb-6 font-light text-heading font-ubuntu">Optimized System
+                                    Performance</h3>
+                                <p class="text-md/10 text-defalut/75 mb-10">Temporibus autem quibusdam et aut officiis
+                                    debitis aut rerum necessitatibus saepe eveniet voluptates repudiandae sint et
+                                    molestiae non recusandae itaque earum rerum hic tenetur sapiente delectus.
+                                </p>
+                                <div class="grid grid-cols-2 gap-10 text-left mb-10">
+                                    <div>
+                                        <span class="block text-2xl font-light text-aqua-700 mb-1">99.8%</span>
+                                        <span class="text-xs text-defalut/60 uppercase tracking-wider">System
+                                            Uptime</span>
+                                    </div>
+                                    <div>
+                                        <span class="block text-2xl font-light text-aqua-700 mb-1">2.4s</span>
+                                        <span class="text-xs text-defalut/60 uppercase tracking-wider">Load Time</span>
+                                    </div>
+                                </div>
+                                <div class="mb-10">
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Ut aut reiciendis voluptatibus maiores alias</span>
+                                    </div>
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Consequatur aut perferendis doloribus asperiores</span>
+                                    </div>
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Repellat nam libero tempore cum soluta nobis</span>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <a href="javascript:void(0)" class="inline-flex items-center gap-2 group-hover:gap-3 text-sm font-medium text-aqua-700 group-hover:text-aqua-700/80 
+                                    transition-all duration-300 ease-in">
+                                        Check Performance
+                                        <i
+                                            class="bi bi-arrow-up-right group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in">
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 px-2">
+                            <div class="relative pl-0 lg:pl-10">
+                                <img src="./images/features-1.webp" class="w-full block rounded-lg" alt="features-1">
+                                <div class="absolute bottom-5 end-5">
+                                    <div class="bg-surface backdrop-blur-md rounded-xl py-4 px-5 flex items-center gap-3 shadow-[0_8px_30px] shadow-defalut/15 
+                                    border border-defalut/10 transition-all ease-in-out animate-updown">
+                                        <i class="bi bi-cpu text-xl text-aqua-700"></i>
+                                        <div>
+                                            <span
+                                                class="block text-[10px] text-defalut/60 uppercase tracking-wider mb-0.5">Power</span>
+                                            <strong class="block text-[13px] font-semibold text-heading">128
+                                                Cores</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-pane-4" class="tab-content hidden">
+                    <div class="flex flex-wrap items-center">
+                        <div class="lg:w-1/2 px-2">
+                            <div class="pr-10 mb-14 lg:mb-0">
+                                <div
+                                    class="inline-flex items-center gap-2 py-2 px-4 bg-aqua-700/8 rounded-4xl text-xs font-medium text-aqua-700 mb-6 tracking-tight">
+                                    <i class="bi bi-puzzle text-sm"></i>
+                                    <span>Smart Integration</span>
+                                </div>
+                                <h3 class="text-4xl/11 mb-6 font-light text-heading font-ubuntu">Seamless Workflow
+                                    Integration</h3>
+                                <p class="text-md/10 text-defalut/75 mb-10">Eligendi optio cumque nihil impedit quo
+                                    minus id quod maxime placeat facere possimus omnis voluptas assumenda est omnis
+                                    dolor repellendus temporibus autem quibusdam et aut officiis debitis.
+                                </p>
+                                <div class="grid grid-cols-2 gap-10 text-left mb-10">
+                                    <div>
+                                        <span class="block text-2xl font-light text-aqua-700 mb-1">450+</span>
                                         <span
-                                            class="block text-[10px] text-defalut/60 uppercase tracking-wider mb-0.5">Speed</span>
-                                        <strong class="block text-[13px] font-semibold text-heading">3x Faster</strong>
+                                            class="text-xs text-defalut/60 uppercase tracking-wider">Integrations</span>
+                                    </div>
+                                    <div>
+                                        <span class="block text-2xl font-light text-aqua-700 mb-1">85%</span>
+                                        <span class="text-xs text-defalut/60 uppercase tracking-wider">Automation</span>
+                                    </div>
+                                </div>
+                                <div class="mb-10">
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Rerum necessitatibus saepe eveniet voluptates</span>
+                                    </div>
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Repudiandae sint et molestiae non recusandae</span>
+                                    </div>
+                                    <div class="flex items-start gap-3 mb-4">
+                                        <i class="bi bi-arrow-right text-xs text-aqua-700 mt-1 shrink-0"></i>
+                                        <span class="text-sm">Itaque earum rerum hic tenetur sapiente</span>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <a href="javascript:void(0)" class="inline-flex items-center gap-2 group-hover:gap-3 text-sm font-medium text-aqua-700 group-hover:text-aqua-700/80 
+                                    transition-all duration-300 ease-in">
+                                        Start Integration
+                                        <i
+                                            class="bi bi-arrow-up-right group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in">
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 px-2">
+                            <div class="relative pl-0 lg:pl-10">
+                                <img src="./images/features-5.webp" class="w-full block rounded-lg" alt="features-5">
+                                <div class="absolute bottom-5 end-5">
+                                    <div class="bg-surface backdrop-blur-md rounded-xl py-4 px-5 flex items-center gap-3 shadow-[0_8px_30px] shadow-defalut/15 
+                                    border border-defalut/10 transition-all ease-in-out animate-updown">
+                                        <i class="bi bi-link-45deg text-xl text-aqua-700"></i>
+                                        <div>
+                                            <span
+                                                class="block text-[10px] text-defalut/60 uppercase tracking-wider mb-0.5">Connected</span>
+                                            <strong class="block text-[13px] font-semibold text-heading">24/7
+                                                Sync</strong>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -806,7 +1023,7 @@
 
         <!-- Call to action Section Start -->
         <section id="call-to-action" class="bg-[#141f33] py-16 sm:py-20 scroll-mt-18 overflow-clip">
-            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28">
                 <div class="flex flex-wrap">
                     <div class="lg:w-5/12 px-2">
                         <div class="pr-10 mb-14 lg:mb-0">
@@ -927,7 +1144,7 @@
 
         <!-- Pricing Section Start -->
         <section id="pricing" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
-            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Pricing</h2>
                     <span class="absolute left-1/2 transform -translate-x-1/2 w-40 bg-defalut/40 h-px"></span>
@@ -1132,7 +1349,7 @@
 
         <!-- Faq Section Start -->
         <section id="faq" class="bg-background py-16 sm:py-20 scroll-mt-18 overflow-clip">
-            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Frequently Asked Questions
                     </h2>
@@ -1290,7 +1507,7 @@
 
         <!--Team Section Start -->
         <section id="team" class="bg-[#141f33] py-16 sm:py-20 scroll-mt-18 overflow-clip">
-            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Team
                     </h2>
@@ -1553,7 +1770,7 @@
 
         <!-- Contact Section Start -->
         <section id="contact" class="relative bg-[#0c1527] py-16 sm:py-20 scroll-mt-18 overflow-clip">
-            <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold pb-5 text-heading font-ubuntu relative">Contact
                     </h2>
@@ -1764,7 +1981,7 @@
 
     <!-- Footer Section Start -->
     <footer id="footer" class="text-defalut bg-[#141f33] text-sm relative">
-        <div class="container max-w-7xl mx-auto pt-12 border-t border-defalut/10 px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-400 px-5 sm:px-10 lg:px-20 2xl:px-28 pt-12 border-t border-defalut/10">
             <div class="flex flex-wrap">
                 <div class="w-full md:w-1/2 lg:w-4/12 mb-5 lg:mb-0">
                     <a href="javascript:void(0)" class="flex items-center mb-6">
